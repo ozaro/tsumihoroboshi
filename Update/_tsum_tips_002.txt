@@ -1,4 +1,4 @@
-void main()
+﻿void main()
 {
 	EnableJumpingOfReturnIcon();
 
@@ -23,7 +23,7 @@ void main()
 		   NULL, "☆Rina☆", Line_ContinueAfterTyping);
 
 	OutputLine(NULL, "身長１６８ｃｍ　Ｂ８９Ｗ６０Ｈ８７",
-		   NULL, " Height 168cm, B89 W60 H87", GetGlobalFlag(GLinemodeSp));
+		   NULL, " 168cm 89-60-87", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -31,7 +31,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "趣味：最近は室内ガーデニングに興味があって、目標は手作りハーブで紅茶を飲むこと☆",
-		   NULL, "Hobbies: I'm interested in indoor gardening. I want to make tea with the herbs I grow.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "J'aime : faire pousser des plantes dans mon appartement. J'aimerais réussir à faire du thé avec mes propres plants.☆", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -39,21 +39,21 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「いっつも楽しくて為になるお話をいっぱい聞かせてくれてありがと〜☆",
-		   NULL, "\"I always enjoy your funny and interesting stories!", Line_WaitForInput);
+		   NULL, "Merci pour toutes ces discussions passionnantes, ça m'aide vraiment beaucoup~sb~☆~sb~", Line_WaitForInput);
 	OutputLine(NULL, "　今度お店に内緒で一緒にどっか遊びに行こうね☆」",
-		   NULL, " We should go out somewhere next time in private!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " La prochaine fois, nous pourrions aller quelque part tous les deux, sans rien dire à personne ?~sb~☆", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { SetDrawingPointOfMessage( 0, 13 ); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "紳士倶楽部　ブルー・マーメイド",
-		   NULL, "               Gentlemen's Club Blue Mermaid", Line_ContinueAfterTyping);
+		   NULL, " ~n s~Le club des gentlemen, le Blue Mermaid", Line_ContinueAfterTyping);
 
 	if (GetGlobalFlag(GADVMode) == 0) { SetDrawingPointOfMessage( 0, 14 ); }
 
 	OutputLine(NULL, "専属マネージャー　間宮リナ",
-		   NULL, "                 Private Manager Rina Mamiya", Line_Normal);
+		   NULL, " ~x+40~Rina Mamiya, manager", Line_Normal);
 	ClearMessage();
 	SetSpeedOfMessage( FALSE, 0 );
 	DisableWindow();

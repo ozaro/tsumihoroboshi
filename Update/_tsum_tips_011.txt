@@ -1,4 +1,4 @@
-void main()
+﻿void main()
 {
 	EnableJumpingOfReturnIcon();
 
@@ -17,34 +17,34 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　大石との電話を終えて電話ボックスを出た瞬間。",
-		   NULL, "I finished talking with Ooishi on the phone, and soon left the phone booth.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Au moment où je sortis de la cabine téléphonique, après mon appel à l'inspecteur Ôishi…", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　………私は今さらのようにそれに気付き、ぞっとした。",
-		   NULL, "...I realized something, and a chill ran through my body.", Line_Normal);
+		   NULL, "il y a un truc qui fit “clic” dans ma tête, et je fus prise de frissons, horrifiée.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　この暗闇の中で、これだけ目立つ電話ボックスにいたのだ。",
-		   NULL, "I was in a phone booth that stood out tremendously in the dark.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Cette cabine téléphonique était un puits de lumière perdu au milieu de nulle part.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　誰にも見られていないわけがない。",
-		   NULL, "Somebody must've seen me.", Line_Normal);
+		   NULL, "Quelqu'un devait forcément m'avoir vue là-dedans.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　いや、見られていないわけがないんじゃなくて、",
-		   NULL, "I was certain", Line_ContinueAfterTyping);
+		   NULL, "Je dirais même plus...", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 	SetSpeedOfMessage( TRUE, 16 );
 	OutputLine(NULL, "見ラレテイタ。",
-		   NULL, " I was being <i>watched</i>.", Line_ContinueAfterTyping);
+		   NULL, " Quelqu'un m'a observée, et m'observe encore.", Line_ContinueAfterTyping);
 	SetSpeedOfMessage( FALSE, 0 );
 	OutputLineAll(NULL, "", Line_Normal);
 
@@ -54,83 +54,83 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　暗闇からじっとこちらを覗く、光る目…。",
-		   NULL, "I saw glowing eyes staring at me in the dark...", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Je vis des reflets, des paires d'yeux au milieu des ténèbres, qui me regardaient en silence, intensément.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　………それが人間であるはずはない。",
-		   NULL, "......It wasn't human.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "... Ce ne sont pas des yeux d'humains.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　幻覚？",
-		   NULL, "Was it an illusion?", Line_WaitForInput);
+		   NULL, "J'ai la berlue, peut-être ?", Line_WaitForInput);
 	OutputLine(NULL, "　違う。",
-		   NULL, " No.", Line_WaitForInput);
+		   NULL, " Non, ce n'est pas possible.", Line_WaitForInput);
 	OutputLine(NULL, "やつらの正体はすでに知っている。",
-		   NULL, " I knew who they were.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " De toute façon, je sais déjà bien ce que c'est...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……それは雛見沢を支配する御三家を、真の意味で支配するやつら。",
-		   NULL, "...They were the ones controlling the Three Families who ruled Hinamizawa.", Line_Normal);
+		   NULL, "Ce sont eux. Ceux qui, réellement, dirigent les actes des trois clans fondateurs, régnant ainsi sur Hinamizawa.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その目の位置は低く、……薄っすらと見える輪郭も貧弱だった。",
-		   NULL, "Its eye level was too low for it to be human... and its outline was vague.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Leurs yeux sont très bas... et leurs silhouettes très fines.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……そう、やつらが体格的に貧弱であることはすでに過去の記録から明らかなのだ。",
-		   NULL, "...I knew from the past records that they were physically frail.", Line_Normal);
+		   NULL, "... De toute façon, c'est bien connu, ils sont maigrichons, il y a déjà eu des rapports pour le prouver.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その、人間ではないことを示すシルエットは、信じられないくらいに非現実的だった。",
-		   NULL, "The silhouette, which indicated its inhuman appearance, was unbelievably unrealistic.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Ces silhouettes n'étaient résolument pas humaines ; d'ailleurs, elles avaient l'air fantaisistes, tout sauf réelles, et pourtant...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…特に頭部のシルエットが異常で、突起物のような何かがあり、明らかに人のそれではない。",
-		   NULL, "...Especially its protruding head.", Line_Normal);
+		   NULL, "Surtout la tête, d'ailleurs. La forme du crâne était vraiment particulière, très protubérante, c'était clairement pas une tête humaine.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……やつらの外見については、三四さんに預かったもう１冊のスクラップ帖の方が詳しかった。",
-		   NULL, "...One of the scrapbooks I received from Miyo-san described their appearance in detail.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "... De toute manière, leur apparence m'est familière : l'autre cahier de Miyo était rempli de descriptions très précises.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……その眼球は血のように真っ赤で、",
-		   NULL, "...Their eyeballs were pure red, like blood...", Line_ContinueAfterTyping);
+		   NULL, "Leurs globes oculaires étaient rouges comme le sang,", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…身体にはアンモニア臭があり、",
-		   NULL, " and their bodies smell like ammonia.", Line_ContinueAfterTyping);
+		   NULL, " leur corps sentait l'ammoniaque,", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 600 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "………過去において世界で何度か捕獲の例があるはずなのに、",
-		   NULL, " ...Even though some of them have, at times, been captured around the world...", Line_ContinueAfterTyping);
+		   NULL, " et malgré les plusieurs spécimens capturés de par le monde,", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 600 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……みな、溶けたりして消えてしまい、跡形も残さない。",
-		   NULL, " all of them melted or disappeared, leaving no trace behind.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " ils disparaissaient toujours sans laisser de traces, comme s'ils se liquéfiaient pour s'évaporer...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……残るのは、やつらが確かに「降臨」したことを示す跡だけ………。",
-		   NULL, "...The only traces remaining are the marks proving their descent to Earth...", Line_Normal);
+		   NULL, "... La seule chose qui restait, à chaque fois, c'était une trace, une faible preuve qu'ils étaient descendus parmi nous...", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その時、ありえない非現実的なシルエットが一歩、",
-		   NULL, "Right then, the impossible unrealistic silhouette took a step closer...", Line_ContinueAfterTyping);
+		   NULL, "Soudain, l'une des silhouettes irréelles tapies dans l'ombre devant moi fit un pas en avant.", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 600 );
 	SetValidityOfInput( TRUE );
@@ -138,123 +138,123 @@ void main()
 	PlaySE( 0, "s_Lf257", 56, 64 );
 
 	OutputLine(NULL, "歩み寄り…、",
-		   NULL, " and got closer and closer towards me...", Line_ContinueAfterTyping);
+		   NULL, " puis un autre,", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 500 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "じゃりりと現実的な音を立てた。",
-		   NULL, " making a realistic noise as it crunched across the gravel.", Line_Normal);
+		   NULL, " et j'entendis ses pas crisser sur les cailloux.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その音のあまりに残酷なくらいの現実感が、私を現実に引き戻す。",
-		   NULL, "The noise pulled me back to reality.", Line_Normal);
+		   NULL, "Ce bruit sur le sol, je ne l'avais pas imaginé, il était réel, et il me remit les idées en place et les yeux en face des trous.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s20/02/440200085", 256, TRUE);
 	OutputLine(NULL, "「ち、……近寄らないで、バケモノめッ！！」",
-		   NULL, "\"D-Don't come closer... you monster!!\"", Line_Normal);
+		   NULL, "— N'approchez pas, sales monstres !", Line_Normal);
 	ClearMessage();
 
 	StartShakingOfWindow( 248, 40, 0, 0, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 0, 4*2, FALSE );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　じゃりり、ガッ、ジャララララ！！",
-		   NULL, "It kept walking towards me!!", Line_Normal);
+		   NULL, "Il y eut soudain plusieurs bruits à la fois.", Line_Normal);
 
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　道路の砂利が、爆ぜたり、飛び散ったりして、奇怪な音を立てた。",
-		   NULL, "It sounded like it was kicking pebbles everywhere as it walked.", Line_Normal);
+		   NULL, "Les gravillons sur le chemin semblaient exploser pour se reformer et être à nouveau éparpillés dans tous les sens. C'était une mélodie, presque, très étrange et angoissante.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　しかもそれは徐々に、私に迫ってくるのだ。",
-		   NULL, "It was coming closer and closer.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Je l'entendis se rapprocher de plus en plus de moi.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……私は恐怖に駆られてもう一度同じ言葉を口にする。",
-		   NULL, "...I was scared, so I said the same thing once again.", Line_Normal);
+		   NULL, "Submergée par la peur, je ne pus que répéter mon ordre.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　すると今度は、私がたった今まで使っていた電話ボックスのガラス扉がびりびりと振るえ、バン！",
-		   NULL, "And this time, the glass door of the phone booth I was just in started to rattle and shake!", Line_ContinueAfterTyping);
+		   NULL, "Et là, la porte de la cabine téléphonique vide, dans laquelle je venais de passer tant de temps, se mit à battre, à bouger toute seule,", Line_ContinueAfterTyping);
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
 
 	OutputLine(NULL, "バン！",
-		   NULL, " Bang!", Line_ContinueAfterTyping);
+		   NULL, " encore,", Line_ContinueAfterTyping);
 
 	StartShakingOfWindow( 248, 40, 0, 0, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 0, 3*2, TRUE );
 
 	OutputLine(NULL, "と打ち付けるような怪奇音を立て始めるのだった。",
-		   NULL, " It made weird sounds as if being struck by something.", Line_Normal);
+		   NULL, " et encore...", Line_Normal);
 	ClearMessage();
 
 	DrawSceneWithMask( "black", "maskright", 7, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私は絹を裂くような悲鳴を挙げ、駆け出す。",
-		   NULL, "I screamed loudly in fear and started running.", Line_Normal);
+		   NULL, "Poussant un hurlement de peur à me déchirer les tympans, je partis en flèche, courant comme une dératée.", Line_Normal);
 	ClearMessage();
 
 	FadeOutBGM( 1, 300, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そして肺が爆発しそうになるまで走ってから振り返り、……もうあの奇怪な気配がそこにいないことを悟る。",
-		   NULL, "I ran so hard that it felt like my lungs were about to explode. And then, I looked back... to find that the thing was no longer chasing after me.", Line_Normal);
+		   NULL, "Lorsque mes poumons menacèrent d'exploser tellement ils me brûlaient le corps, je ralentis et me retournai : il n'y avait plus personne. Ils ne m'avaient pas suivie...", Line_Normal);
 	ClearMessage();
 
 	DrawSceneWithMask( "background/m_y2", "maskright", 7, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…………気のせい………？",
-		   NULL, "......Was it my imagination...?", Line_Normal);
+		   NULL, "... ... Est-ce que j'aurais pu rêver cette présence ?", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　気のせいなものか、砂利を蹴散らすような音、電話ボックスを鳴らす怪奇音は確かに聞いたじゃないか！！",
-		   NULL, "There's no way it was just my imagination. I definitely heard the sound of the gravel being kicked and the phone booth rattling!!", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Non, non, c'est pas possible, les gravillons et les petits cailloux n'ont pas bougé tout seuls ! Et la porte de la cabine téléphonique non plus !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　でも落ち着け竜宮レナ…！",
-		   NULL, "But I needed to calm down...!", GetGlobalFlag(GLinemodeSp));
+		   NULL, "OK, Rena, calme toi ma grande, c'est pas le moment de te pisser dans la culotte.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……気のせいということにしてもいいから、今は心臓を落ち着けるんだ。",
-		   NULL, "...Right then, I needed to make my heart stop beating so fast.", Line_Normal);
+		   NULL, "... À la rigueur, je peux toujours faire semblant de ne rien avoir vu ni entendu. Il faut juste que je me calme.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……どうせ、…いつか戦う相手じゃないか。",
-		   NULL, "...I'd have to fight them eventually.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "De toute façon, il faudra bien que tu te battes contre eux un jour où l'autre.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…次に現れたら、刃向かってやれ…。",
-		   NULL, "...The next time they appeared, I was going to strike back at them...", Line_WaitForInput);
+		   NULL, "La prochaine fois qu'ils t'approchent, passe à l'attaque.", Line_WaitForInput);
 	OutputLine(NULL, "分厚い鉈を頭に叩き込んでやれ…！",
-		   NULL, " I was going to squash their heads with my big hatchet...!", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Tu as une machette, alors sers-t'en ! Un coup bien au milieu du crâne, ça va leur faire tout drôle !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　雛見沢は私が守る、それが私の使命なんだ。",
-		   NULL, "I'd protect Hinamizawa. It was my duty to do so.", Line_WaitForInput);
+		   NULL, "Je protègerai ce village. Je ne sais pas faire beaucoup de choses, mais ça, je peux faire !", Line_WaitForInput);
 	OutputLine(NULL, "…やつらの好きになんかさせるものか…ッ！！",
-		   NULL, " I wouldn't allow them to do whatever they wanted...!!", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Les gens comptent sur moi, de toute façon. Ça ne se passera pas comme ça, ils ne feront pas ce qu'ils veulent !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　チリチリチリチリ……チリチリチリチリ。",
-		   NULL, "I saw the lights flickering in my head again...", Line_Normal);
+		   NULL, "Rah, ça me gratte toujours, ce cou, c'est pas vrai... Aaaah... Hmmm.... Rahh, purée, ça part pas...", Line_Normal);
 	ClearMessage();
 
 	SetColorOfMessage( TRUE, 0xff, 0xff, 0xff );
