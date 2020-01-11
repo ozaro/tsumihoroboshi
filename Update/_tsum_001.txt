@@ -637,7 +637,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/hr_ren00020", 256, TRUE);
 	OutputLine(NULL, "「うん！！」",
-		   NULL, " — Parfait !", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— Parfait !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -657,23 +657,23 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そりゃつまりどういうことかって言うと、",
-		   NULL, "Ce qui voulait dire qu'elle était sûre et certaine de pouvoir tous nous battre sans problème !", Line_WaitForInput);
+		   NULL, "Ce qui voulait dire", Line_WaitForInput);
 	OutputLine(NULL, "こいつ、自分ひとりでクラス丸ごと殲滅するつもりなんだ。",
-		   NULL, " Qu'elle réussirait à gagner, même seule contre nous tous à la fois !", Line_WaitForInput);
+		   NULL, " qu'elle était sûre et certaine de pouvoir tous nous battre sans problème !", Line_WaitForInput);
 	OutputLine(NULL, "いや、つもりなんてもんじゃない。",
-		   NULL, " A REMOVE", Line_WaitForInput);
+		   NULL, " Qu'elle réussirait à gagner,", Line_WaitForInput);
 	OutputLine(NULL, "クラスを丸ごと殲滅",
-		   NULL, " A REMOVE", Line_ContinueAfterTyping);
+		   NULL, " même seule", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "“する”、",
-		   NULL, " A REMOVE", Line_ContinueAfterTyping);
+		   NULL, " contre nous tous", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 500 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "ひとりで！",
-		   NULL, " A REMOVE", Line_Normal);
+		   NULL, " à la fois !", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -865,7 +865,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s09/03/500300645", 256, TRUE);
 	OutputLine(NULL, "こりゃあ面白くなりそうだよ！",
-		   NULL, "Mais c'est la fête du slip, ma parole !  Cette partie promet d'être passionnante.", Line_WaitForInput);
+		   NULL, "Mais c'est la fête du slip, ma parole ! Cette partie promet d'être passionnante.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s09/03/500300646", 256, TRUE);
 	OutputLine(NULL, "　くっくっく！",
 		   NULL, " Héhéhé !", Line_WaitForInput);
@@ -2412,13 +2412,8 @@
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　だがそれでもレナの最後の一撃が恐ろしい。",
+	OutputLine(NULL, "　だがそれでもレナの最後の一撃が恐ろしい。　レナを追い詰め不敵に笑う沙都子だが、その胸中は恐れで満たされていることが見て取れた。",
 		   NULL, "Et c'est peut-être bien pour cela que Satoko avait visiblement peur de la dernière attaque de Rena.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　レナを追い詰め不敵に笑う沙都子だが、その胸中は恐れで満たされていることが見て取れた。",
-		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -3256,12 +3251,7 @@
 	DrawScene( "background/blur/GR2", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　例えるならダンスのよう。",
-		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　それはひとりでは絶対にできない舞い。",
+	OutputLine(NULL, "　例えるならダンスのよう。　それはひとりでは絶対にできない舞い。",
 		   NULL, "Une danse impossible à danser tout seul.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
@@ -4250,17 +4240,12 @@
 	PlaySE( 0, "wa_001", 56, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　みんなが大笑いする中、授業の終わりを告げる振鈴の音が鳴り響くのだった。",
+	OutputLine(NULL, "　みんなが大笑いする中、授業の終わりを告げる振鈴の音が鳴り響くのだった。　オチ。",
 		   NULL, "Toute la classe éclata de rire, alors que la cloche annonçant la fin des cours retentissait derrière nous.", Line_Normal);
 	ClearMessage();
 
 	DrawSceneWithMask( "white", "maskleft", 1, 0, 300 );
 	DrawScene( "black", 400 );
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　オチ。",
-		   NULL, "A REMOVE", Line_Normal);
-	ClearMessage();
 
 	ModDrawCharacter(1, 5, "sprite/ri3_warai_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawSceneWithMask( "background/G1", "maskup", 1, 0, 300 );
@@ -4353,7 +4338,7 @@
 		   NULL, " Je suis abandonnée !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 5, "ps3/s09/05/500500280", 256, TRUE);
 	OutputLine(NULL, "……ダンボール箱の中でみーみー鳴いて、誰も拾ってくれないかわいそかわいそな猫さんなのですよ。",
-		   NULL, " Je suis condamnée à être comme un chaton dans un carton, laissé au coin d'une rue, miaulant encore encore avec l'énergie du desespoir... Miaou ! Mais bien sûr, personne ne veut de moi, personne ne vient à mon secours, personne ne prendra dans ses bras pour me ramener à la maison...", Line_WaitForInput);
+		   NULL, " Je suis condamnée à être comme un chaton dans un carton, laissé au coin d'une rue, miaulant encore encore avec l'énergie du desespoir... Miaou ! Mais bien sûr, personne ne veut de moi, personne ne vient à mon secours, personne ne me prendra dans ses bras pour me ramener à la maison...", Line_WaitForInput);
 	ModPlayVoiceLS(4, 5, "ps3/s09/05/500500281", 256, TRUE);
 	OutputLine(NULL, "……みーみー…。」",
 		   NULL, " Miaou, miaou, miaaaaaaou !", Line_Normal);
@@ -4444,7 +4429,7 @@
 	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "　きゅい、",
-		   NULL, " (´Ouuh toi, tu es à moi maintenant !", Line_ContinueAfterTyping);
+		   NULL, " « Ouuh toi, tu es à moi maintenant !", Line_ContinueAfterTyping);
 	PlaySE( 0, "s_furu", 56, 64 );
 	SetValidityOfInput( FALSE );
 	Wait( 300 );
@@ -4470,13 +4455,8 @@
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　レナはいつものレナに戻ると梨花ちゃんを瞬時に、カメレオンばりの速度で捕食する。",
-		   NULL, "Rika eut beau se débattre, elle ne put se défaire de la langue de Rena, qui l'entourait telle un caméléon.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　梨花ちゃんはそれから逃れようともがくのだった。",
-		   NULL, "A REMOVE", Line_Normal);
+	OutputLine(NULL, "　レナはいつものレナに戻ると梨花ちゃんを瞬時に、カメレオンばりの速度で捕食する。　梨花ちゃんはそれから逃れようともがくのだった。",
+		   NULL, "Rika eut beau se débattre, elle ne put se défaire de la langue de Rena, qui l'entourait telle un caméléon.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>Cie</color>", NULL, Line_ContinueAfterTyping); }
