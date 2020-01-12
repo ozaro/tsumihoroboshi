@@ -126,17 +126,13 @@
 	ModPlayVoiceLS(5, 0, "ps3/s09/00/mani17003", 256, TRUE);
 	ModPlayVoiceLS(6, 0, "ps3/s09/00/manj17005", 256, TRUE);
 	OutputLine(NULL, "「「「おおお、お持ち帰りぃいぃ〜！！」」」",
-		   NULL, "— JE LA VEUX À LA MAISON !", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	SetSpeedOfMessage( FALSE, 0 );
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "と、お持ち帰りコールになる！",
-		   NULL, "A REMOVE", Line_Normal);
+		   NULL, "— JE LA VEUX À LA MAISON !", Line_Normal);
 	ClearMessage();
 
+	SetSpeedOfMessage( FALSE, 0 );
+
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　気付けば、店中の客が俺たちの席の周りに群がって、梨花ちゃんの給仕姿をその眼に焼き付けようとしているのだった。",
+	OutputLine(NULL, "と、お持ち帰りコールになる！　気付けば、店中の客が俺たちの席の周りに群がって、梨花ちゃんの給仕姿をその眼に焼き付けようとしているのだった。",
 		   NULL, "Je regardai autour de nous ; les autres clients s'étaient levés pour s'approcher de notre table et pour fixer dans leurs rétines le spectacle qui s'offrait à eux.", Line_Normal);
 	ClearMessage();
 
@@ -772,7 +768,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>客たち</color>", NULL, "<color=#f5e6d3>Clients</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s09/00/manm17003", 256, TRUE);
 	OutputLine(NULL, "「こここれはー住民票を雛見沢に移すっきゃなあぁあぁ！！」",
-		   NULL, "C'est décidé, je DÉMÉNAGE !", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— C'est décidé, je DÉMÉNAGE !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	SetSpeedOfMessage( FALSE, 0 );
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
