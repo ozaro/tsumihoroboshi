@@ -628,7 +628,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　店の前には登りが出ていて、「デザートフェスタ」と書かれている。",
-		   NULL, "Devant l'établissement, un présentoir proclamait fièrement : Festival des desserts", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Devant l'établissement, un présentoir proclamait fièrement : Festival des desserts.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -717,7 +717,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>男</color>", NULL, "<color=#f5e6d3>Homme</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s09/00/manc17001", 256, TRUE);
 	OutputLine(NULL, "「ボ、僕を仲間に加えてくれたら、エンジェルモートトレカのレアカードを進呈するよおぉぉ！！」",
-		   NULL, "— S-si v-vous me laisser entrer, j-je vous donne une carte de téléphone rare à l'ef-l'ef-l'effigie du café !", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— S-si v-vous me laissez entrer, j-je vous donne une carte à collectionner rare à l'ef-l'ef-l'effigie du café !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_Continue); }
 
 	PlaySE( 0, "wa_011", 56, 64 );
@@ -725,7 +725,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>男</color>", NULL, "<color=#f5e6d3>Homme</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s09/00/mand17001", 256, TRUE);
 	OutputLine(NULL, "「オイラならフロントフィールドの夏コミ新刊を限定本付きでー！！！」",
-		   NULL, " — Et moi un artbook limité du cercle Front Wing !", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— Et moi un artbook limité du cercle Front Wing !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_Continue); }
 
 	PlaySE( 0, "s_Down", 56, 64 );
@@ -733,7 +733,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>男</color>", NULL, "<color=#f5e6d3>Homme</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s09/00/mane17001", 256, TRUE);
 	OutputLine(NULL, "「『ひぐらし』β版、着せ替えモード搭載版で譲ってぇえぇ！！」",
-		   NULL, " — Moi je vous file une version bêta de Higurashi, avec les mini-jeux censurés et le mode poupée pour changer les habits des personnages !", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— Moi je vous file une version bêta de Higurashi, avec les mini-jeux censurés et le mode poupée pour changer les habits des personnages !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_Continue); }
 
 	PlaySE( 0, "s_furu", 56, 64 );
@@ -741,7 +741,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>男</color>", NULL, "<color=#f5e6d3>Homme</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s09/00/manf17001", 256, TRUE);
 	OutputLine(NULL, "「Ｇ氏の魔改造フィギュアでなんとかーッ！！」",
-		   NULL, " — Allez, pour une figurine modifiée faite par un grand maître du porno !", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— Allez, pour une figurine modifiée faite par un grand maître du porno !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_Continue); }
 
 	DisableWindow();
@@ -752,7 +752,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>男</color>", NULL, "<color=#f5e6d3>Homme</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s09/00/mang17001", 256, TRUE);
 	OutputLine(NULL, "「お…俺はリアルマネー壱萬円だすよー！！」",
-		   NULL, " — Moi, je te file du cash, 10 000Yens, là tout de suite !", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— Moi, je te file du cash, 10 000Yens, là tout de suite !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_Continue); }
 
 	DisableWindow();
@@ -1080,7 +1080,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>男</color>", NULL, "<color=#f5e6d3>Homme</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s09/00/manb17005", 256, TRUE);
 	OutputLine(NULL, "「ひゃっひゃっひゃ！",
-		   NULL, " — Ahahahaha !", Line_WaitForInput);
+		   NULL, "— Ahahahaha !", Line_WaitForInput);
 
 	PlaySE( 0, "wa_011", 56, 64 );
 
@@ -1101,7 +1101,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>男</color>", NULL, "<color=#f5e6d3>Homme</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s09/00/manc17005", 256, TRUE);
 	OutputLine(NULL, "「エンジェルモートのイベントチケットを二人だけで消化しようなどとは許せんにゃりん！！",
-		   NULL, " — Je ne permettrai pas que l'on gâche des places assises dans l'Angel Mort !", Line_WaitForInput);
+		   NULL, "— Je ne permettrai pas que l'on gâche des places assises dans l'Angel Mort !", Line_WaitForInput);
 	PlaySE( 0, "s_furu", 56, 64 );
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 200 );
