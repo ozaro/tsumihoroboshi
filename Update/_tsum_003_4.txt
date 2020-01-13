@@ -537,7 +537,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　本当に幸せなのは、……幸せな日々に飽食し、幸せであることを自覚すらしないこと。",
-		   NULL, "Le vrai bonheur, c'est celui qui nous fait vivre dans l'insoucience, et que l'on ne remarque pas.", Line_Normal);
+		   NULL, "Le vrai bonheur, c'est celui qui nous fait vivre dans l'insouciance, et que l'on ne remarque pas.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
