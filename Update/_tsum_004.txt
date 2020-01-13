@@ -1226,17 +1226,17 @@
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "ぐるぐるきゅー",
-		   NULL, " Mon ventre est pas tranquille, là...", Line_ContinueAfterTyping);
+		   NULL, " Mon ventre,", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 600 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "きゅー、",
-		   NULL, " A REMOVE", Line_ContinueAfterTyping);
+		   NULL, " est pas tranquille", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "穏やかならぬ音がお腹から聞こえるぞ。",
-		   NULL, " A REMOVE", Line_Normal);
+		   NULL, " là...", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2009,13 +2009,13 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　クマさんの水筒は今は空っぽ。",
-		   NULL, "Ma thermos en forme d'ourson est vide.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Mon thermos en forme d'ourson est vide.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ここで過ごすことに決めた日曜日には、この水筒に甘い紅茶を入れて持ってくるの。",
-		   NULL, "Les dimanches que j'ai décidé de passer ici, je la ramène pleine de thé noir que j'ai légèrement sucré.", Line_Normal);
+		   NULL, "Les dimanches que j'ai décidé de passer ici, je le ramène plein de thé noir que j'ai légèrement sucré.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2137,7 +2137,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　圭一くんとの一騎打ちはハラハラしてとても興奮した。",
-		   NULL, "Le duel contre Keiichi était vraiment exhaltant.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Le duel contre Keiichi était vraiment exaltant.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2253,14 +2253,8 @@
 	OutputLine(NULL, "　誰も知らない、私だけの匂いのするところで、こうしてひとりぬくぬくしていると。",
 		   NULL, "Lorsque j'étais comme ça, seule, à sentir seulement mon odeur et rien d'autre, je me sentais étrangement calme. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "土砂降りの中にひとり取り残されたって、不思議な安堵感があった。",
-		   NULL, "D'ailleurs, curieusement, même la pluie semblait vouloir éloigner les ennemis de mon château-fort. Je l'aimais bien.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
-
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　むしろ、雨すらも、この城を外敵から遠ざけてくれているような気がして、愛おしく感じる。",
-		   NULL, "A REMOVE", Line_Normal);
+	OutputLine(NULL, "土砂降りの中にひとり取り残されたって、不思議な安堵感があった。　むしろ、雨すらも、この城を外敵から遠ざけてくれているような気がして、愛おしく感じる。",
+		   NULL, "D'ailleurs, curieusement, même la pluie semblait vouloir éloigner les ennemis de mon château-fort. Je l'aimais bien.", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "background/mo_r1_02", 3000 );
