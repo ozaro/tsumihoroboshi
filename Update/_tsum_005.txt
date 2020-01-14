@@ -136,7 +136,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　溢れる才能と情熱をこんな田舎で冷めさせたくない。",
-		   NULL, "Ma mère « ne v[oulait] pas gâcher [s]on talent et [s]a passion en restant à la campagne ».", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Ma mère « ne voulait pas gâcher son talent et sa passion en restant à la campagne ».", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -250,17 +250,12 @@
 	OutputLine(NULL, "　そう言うと父は決まって、お母さんはとてもがんばっていて大変なんだ。",
 		   NULL, "Mon père répondait à chaque fois que Maman avait beaucoup de travail et que ce n'était pas facile pour elle.", Line_WaitForInput);
 
-	OutputLine(NULL, "　だから礼奈も、一緒にお母さんを支えてあげような。",
-		   NULL, " Et alors il disait toujours que je devais aussi me montrer compréhensive et l'aider à soutenir ma mère.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だから礼奈も、一緒にお母さんを支えてあげような。　そう言った。",
+		   NULL, " Et alors il disait toujours que je devais aussi me montrer compréhensive et l'aider à soutenir ma mère.", Line_Normal);
+	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　そう言った。",
-		   NULL, "A REMOVE", Line_Normal);
-	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私は、料理を手伝うことにした。",
@@ -813,9 +808,9 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だから。",
-		   NULL, "A REMOVE", Line_WaitForInput);
+		   NULL, "J'étais persuadée", Line_WaitForInput);
 	OutputLine(NULL, "……これは母の裏切り行為だと思った。",
-		   NULL, " J'étais persuadée que c'était elle qui l'avait trahi.", Line_Normal);
+		   NULL, " que c'était elle qui l'avait trahi.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1181,17 +1176,17 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…だって、",
-		   NULL, "L'enveloppe était gondolée.", Line_ContinueAfterTyping);
+		   NULL, "L'enveloppe", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "封筒の中の手紙は、",
-		   NULL, " A REMOVE", Line_ContinueAfterTyping);
+		   NULL, " était", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "ごわごわしていたから。",
-		   NULL, " A REMOVE", GetGlobalFlag(GLinemodeSp));
+		   NULL, " gondolée.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1382,7 +1377,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…母がこの家にいたことを示すあらゆる痕跡、",
-		   NULL, "Et pourtant, à chaque fois objet qui rappelait son existence --", Line_WaitForInput);
+		   NULL, "Et pourtant, à chaque fois que mon père voyait un objet qui rappelait son existence --", Line_WaitForInput);
 	OutputLine(NULL, "……母の歯ブラシとか、",
 		   NULL, " sa brosse à dents,", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
@@ -1522,16 +1517,16 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そうと分かれば、",
-		   NULL, "Lorsqu'enfin je compris cela...", Line_ContinueAfterTyping);
+		   NULL, "Lorsqu'enfin je compris cela", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 	SetSpeedOfMessage( TRUE, 16 );
 	OutputLine(NULL, "………",
-		   NULL, " A REMOVE", Line_ContinueAfterTyping);
+		   NULL, "...", Line_ContinueAfterTyping);
 	SetSpeedOfMessage( FALSE, 0 );
 	OutputLine(NULL, "母がいなくなってからの、へんてこりんなおかしな世界は全て説明がついた。",
-		   NULL, "le monde bizarroïde dans lequel j'avais vécu après le départ de ma mère eut enfin un sens.", Line_Normal);
+		   NULL, " le monde bizarroïde dans lequel j'avais vécu après le départ de ma mère eut enfin un sens.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
