@@ -39,21 +39,21 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「いっつも楽しくて為になるお話をいっぱい聞かせてくれてありがと〜☆",
-		   NULL, "Merci pour toutes ces discussions passionnantes, ça m'aide vraiment beaucoup~sb~☆~sb~", Line_WaitForInput);
+		   NULL, "Merci pour toutes ces discussions passionnantes, ça m'aide vraiment beaucoup~☆", Line_WaitForInput);
 	OutputLine(NULL, "　今度お店に内緒で一緒にどっか遊びに行こうね☆」",
-		   NULL, " La prochaine fois, nous pourrions aller quelque part tous les deux, sans rien dire à personne ?~sb~☆", GetGlobalFlag(GLinemodeSp));
+		   NULL, " La prochaine fois, nous pourrions aller quelque part tous les deux, sans rien dire à personne ?☆", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { SetDrawingPointOfMessage( 0, 13 ); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "紳士倶楽部　ブルー・マーメイド",
-		   NULL, " ~n s~Le club des gentlemen, le Blue Mermaid", Line_ContinueAfterTyping);
+		   NULL, "		Le club des gentlemen, le Blue Mermaid", Line_ContinueAfterTyping);
 
 	if (GetGlobalFlag(GADVMode) == 0) { SetDrawingPointOfMessage( 0, 14 ); }
 
 	OutputLine(NULL, "専属マネージャー　間宮リナ",
-		   NULL, " ~x+40~Rina Mamiya, manager", Line_Normal);
+		   NULL, "		Rina Mamiya, manager", Line_Normal);
 	ClearMessage();
 	SetSpeedOfMessage( FALSE, 0 );
 	DisableWindow();
