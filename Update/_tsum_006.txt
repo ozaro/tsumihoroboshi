@@ -207,9 +207,9 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　こんなにも幸せな日が、このままいつまでも続けばいいな、と。",
-		   NULL, "Si seulement ça pouvait durer pour toujours...", Line_WaitForInput);
+		   NULL, "Si seulement ça pouvait durer", Line_WaitForInput);
 	OutputLine(NULL, "今朝は素直にそう思うのだった。",
-		   NULL, " A REMOVE", Line_Normal);
+		   NULL, " pour toujours...", Line_Normal);
 	ClearMessage();
 
 	DrawSceneWithMask( "white", "maskright", 1, 0, 300 );
@@ -1014,7 +1014,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　でも、だからといって、その日までリナさんとの交際を控えてくれなんて言えるわけもない。",
-		   NULL, "Mais ce n'est pas pour ça que je peux lui interdire de pousuivre sa relation avec elle.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Mais ce n'est pas pour ça que je peux lui interdire de poursuivre sa relation avec elle.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -1505,7 +1505,7 @@
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "「それでは失礼いたしますー！」と聞こえてきた。",
-		   NULL, " — Sur ce, nous allons vous laissez.", Line_Normal);
+		   NULL, " — Sur ce, nous allons vous laisser.", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "background/re_g1", 400 );
@@ -1739,7 +1739,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　引っ越しても、まだ離婚の傷が癒せずにいるお父さんを元気付ける意味で、私も部屋の模様替えを提案したことはある。",
-		   NULL, "J'avais, il y a plusieurs mois, fait moi-même une proposition en ce genre, voyant bien que mon père, malgré le déménagement, péréclitait.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "J'avais, il y a plusieurs mois, fait moi-même une proposition en ce genre, voyant bien que mon père, malgré le déménagement, périclitait.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -2301,13 +2301,8 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　……生んでくれた人に捨てられた、彼らを。",
-		   NULL, "J'avais peut-être eu simplement envie de leur donner un nouvel endroit où vivre, à eux qui avaient déjà été abandonnés par leurs créateurs...", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　居てもいい場所に連れ帰ってあげたかったのかもしれない。",
-		   NULL, "A REMOVE", Line_Normal);
+	OutputLine(NULL, "　……生んでくれた人に捨てられた、彼らを。　居てもいい場所に連れ帰ってあげたかったのかもしれない。",
+		   NULL, "J'avais peut-être eu simplement envie de leur donner un nouvel endroit où vivre, à eux qui avaient déjà été abandonnés par leurs créateurs...", Line_Normal);
 	ClearMessage();
 
 	CallScript( "&eye" );
