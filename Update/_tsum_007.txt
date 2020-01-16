@@ -36,7 +36,7 @@
 		   NULL, "— Madame Ryûgû, je suis extrêêêmement désolé,", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s09/00/regia17002", 256, TRUE);
 	OutputLine(NULL, "実は入荷のトラックが高速で事故渋滞に巻き込まれているようでございまして…。",
-		   NULL, " mais voyez-vous, le camion que devait nous livrer est bloqué en ce moment sur l'autoroute, pris dans l'embouteillage causé par un accident.", Line_WaitForInput);
+		   NULL, " mais voyez-vous, le camion qui devait nous livrer est bloqué en ce moment sur l'autoroute, pris dans l'embouteillage causé par un accident.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s09/00/regia17003", 256, TRUE);
 	OutputLine(NULL, "おそらくはもうじき到着すると思うのですが…。」",
 		   NULL, " Mais je suis sûr qu'il va bientôt arriver, ne vous en faites pas...", Line_Normal);
@@ -192,13 +192,8 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　待っていた客が来たことに気付くと、男女は馬鹿笑いを止め、ドスの効いた声で着席を促した。",
-		   NULL, "Les deux hommes tirèrent leurs chaises, un peu maladroits, et se mirent assis en face du couple devenu silencieux.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　客２人はおずおずと勧められるままに座る。",
-		   NULL, "A REMOVE", Line_Normal);
+	OutputLine(NULL, "　待っていた客が来たことに気付くと、男女は馬鹿笑いを止め、ドスの効いた声で着席を促した。　客２人はおずおずと勧められるままに座る。",
+		   NULL, "Les deux hommes tirèrent leurs chaises, un peu maladroits, et se mirent assis en face du couple devenu silencieux.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ddc16b>鉄平</color>", NULL, "<color=#ddc16b>Teppei</color>", NULL, Line_ContinueAfterTyping); }
@@ -1485,10 +1480,8 @@
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　一応。",
-		   NULL, "Kasai ne fit qu'acquiescer laconiquement.", Line_WaitForInput);
-	OutputLine(NULL, "葛西はそう言って小さく頷いた。",
-		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "　一応。葛西はそう言って小さく頷いた。",
+		   NULL, "Kasai ne fit qu'acquiescer laconiquement.", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -2638,7 +2631,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　あぁ、でも葛西さんて人とどうやれば会えるかなんて知らないし、",
-		   NULL, "Mais oui, mais ça me dit quand même pas comment je vais le rencontre, moi, Kasai !", Line_WaitForInput);
+		   NULL, "Mais oui, mais ça me dit quand même pas comment je vais le rencontrer, moi, Kasai !", Line_WaitForInput);
 	OutputLine(NULL, "……魅ぃちゃんたちにうちの事情を知られたくないし…。",
 		   NULL, " Et puis, j'ai pas envie d'expliquer à Mii pourquoi je dois le voir...", Line_Normal);
 	ClearMessage();
