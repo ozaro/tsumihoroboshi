@@ -156,13 +156,8 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100214_1", 256, TRUE);
-	OutputLine(NULL, "「いやぁ…、平和過ぎて退屈だぜ。」",
-		   NULL, "— Aaaah, la vache, il se passe jamais rien ici, c'est trop calme, on se fait chier, hein ?", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　圭一くんが大あくびをしながら話しかけて来る。",
-		   NULL, "A REMOVE", Line_Normal);
+	OutputLine(NULL, "「いやぁ…、平和過ぎて退屈だぜ。」　圭一くんが大あくびをしながら話しかけて来る。",
+		   NULL, "— Aaaah, la vache, il se passe jamais rien ici, c'est trop calme, on se fait chier, hein ?", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -875,125 +870,120 @@
 		   NULL, "Il faut que je sache quoi faire si M. Kasai ne veut pas m'aider.", Line_WaitForInput);
 	OutputLine(NULL, "お父さんをリナさんたちから守らなくちゃ。",
 		   NULL, " Je dois protéger Papa, mais comment ?", Line_WaitForInput);
-	OutputLine(NULL, "あぁ、私はいつまであいつのことを、さん付けで呼ぶんだろう？",
+	OutputLine(NULL, "あぁ、私はいつまであいつのことを、さん付けで呼ぶんだろう？　リナはリナだ、リナリナリナ。お父さんを誑かして、私たち親子に不和をもたらそうとする「悪い人」。",
 		   NULL, " Il faut que j'arrête d'être gentille ou respecteuse envers Rina, c'est une méchante, elle a monté la tête à mon père pour faire régner la discorde entre nous. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　リナはリナだ、リナリナリナ。",
-		   NULL, "Une méchante, c'est une méchante,", Line_WaitForInput);
-	OutputLine(NULL, "お父さんを誑かして、私たち親子に不和をもたらそうとする「悪い人」。",
-		   NULL, " elle est pas comme les autres, elle est différente de près de 90% des gens.", Line_WaitForInput);
 	OutputLine(NULL, "悪い人はただいるだけで悪い人。",
+		   NULL, "Une méchante, c'est une méchante,", Line_WaitForInput);
+	OutputLine(NULL, "悪くない９割の人とはまったく違う存在。",
+		   NULL, " elle est pas comme les autres, elle est différente de près de 90% des gens.", Line_WaitForInput);
+	OutputLine(NULL, "曖昧に見逃せばそれだけで周りが膿んで腫れてしまう存在。",
 		   NULL, " Si je la laisse faire, elle apportera le malheur partout où elle passera. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "悪くない９割の人とはまったく違う存在。",
-		   NULL, "C'est comme quand on laisse une mandarine pourrie dans la boîte, en un rien de temps, toutes les autres sont contaminées...", Line_WaitForInput);
-	OutputLine(NULL, "曖昧に見逃せばそれだけで周りが膿んで腫れてしまう存在。",
-		   NULL, " A REMOVE ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "ほら、みかん箱に１つ痛んだみかんがあると、周りのみかんを次々腐らせてしまう、",
-		   NULL, "A REMOVE", Line_ContinueAfterTyping);
+		   NULL, "C'est comme quand on laisse une mandarine pourrie dans la boîte,", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 500 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "ああいう感じ。",
-		   NULL, " A REMOVE", Line_Normal);
+		   NULL, " en un rien de temps, toutes les autres sont contaminées...", Line_Normal);
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…去年の悟史くんは、どうやってその三角形を終わらせたんだっけ？あぁ頭がチカチカ、チカチカ…。",
-		   NULL, "Oui, c'est ça, il me faut une solution, comment est-ce que Satoshi avait fait, déjà ? Aaaah, ma tête, mes yeux, non, non, non, pas les lumières, aïe, arrête, ça suffit, ÇA SUFFIT !", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Oui, c'est ça, il me faut une solution, comment est-ce que Satoshi avait fait, déjà ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	SetSpeedOfMessage( TRUE, 128 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "チ",
-		   NULL, "A REMOVE", Line_ContinueAfterTyping);
+		   NULL, " Aaaah,", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 80 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "チ",
-		   NULL, " A REMOVE", Line_ContinueAfterTyping);
+		   NULL, " ma", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 80 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "カ",
-		   NULL, " A REMOVE", Line_ContinueAfterTyping);
+		   NULL, " tête,", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 80 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "チ",
-		   NULL, " A REMOVE", Line_ContinueAfterTyping);
+		   NULL, " mes", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 80 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "カ",
-		   NULL, " A REMOVE", Line_ContinueAfterTyping);
+		   NULL, " yeux,", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 80 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "チ",
-		   NULL, " A REMOVE", Line_ContinueAfterTyping);
+		   NULL, " non,", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 80 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "カ",
-		   NULL, "A REMOVE", Line_ContinueAfterTyping);
+		   NULL, " non,", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 80 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "、",
-		   NULL, " A REMOVE", Line_ContinueAfterTyping);
+		   NULL, " non,", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 80 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "チ",
-		   NULL, " A REMOVE", Line_ContinueAfterTyping);
+		   NULL, " pas", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 80 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "カ",
-		   NULL, " A REMOVE", Line_ContinueAfterTyping);
+		   NULL, " les", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 80 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "チ",
-		   NULL, " A REMOVE", Line_ContinueAfterTyping);
+		   NULL, " lumières,", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 80 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "カ",
-		   NULL, " A REMOVE", Line_ContinueAfterTyping);
+		   NULL, " aïe,", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 80 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "チ",
-		   NULL, "A REMOVE", Line_ContinueAfterTyping);
+		   NULL, " arrête,", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 80 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "カ",
-		   NULL, " A REMOVE", Line_ContinueAfterTyping);
+		   NULL, " ça", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 80 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "チ",
-		   NULL, " A REMOVE", GetGlobalFlag(GLinemodeSp));
+		   NULL, " suffit", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	SetValidityOfInput( FALSE );
 	Wait( 80 );
 	SetValidityOfInput( TRUE );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "カ",
-		   NULL, "A REMOVE", Line_ContinueAfterTyping);
+		   NULL, ",", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 80 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…",
-		   NULL, " A REMOVE", Line_ContinueAfterTyping);
+		   NULL, " ÇA", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 80 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "。",
-		   NULL, " A REMOVE", Line_Normal);
+		   NULL, " SUFFIT !", Line_Normal);
 	ClearMessage();
 	SetSpeedOfMessage( FALSE, 0 );
 
@@ -1493,7 +1483,7 @@
 		   NULL, " Tiens, je sais pas si tu savais,", Line_WaitForInput);
 	ModPlayVoiceLS(4, 20, "ps3/s09/20/172100099", 256, TRUE);
 	OutputLine(NULL, "　昔、平坂の二丁目にもタイヤの外れた車ばっかり積んであるところがあってねー。」",
-		   NULL, " mais à une époque, au quartier n°  2 à Hirasaka, il y avait des montagnes de carosseries de bagnoles, sans les pneus. C'est fou, non ?", GetGlobalFlag(GLinemodeSp));
+		   NULL, " mais à une époque, au quartier n°2 à Hirasaka, il y avait des montagnes de carosseries de bagnoles, sans les pneus. C'est fou, non ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1751,7 +1741,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それは車酔いにも似た感覚で、甘酒に酔うような心地よさはない。",
-		   NULL, "C'était un peu comme le mal des transports, j'allais de plus en plus mal, pas comme lorsque vous êtes ivres.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "C'était un peu comme le mal des transports, j'allais de plus en plus mal, pas comme lorsque vous êtes ivre.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2519,13 +2509,8 @@
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　レナはその力の均衡をわざと崩した。",
+	OutputLine(NULL, "　レナはその力の均衡をわざと崩した。　敢えて自ら後ろへ転ぶことでリナの体勢を崩そうと試みたのだ。",
 		   NULL, "Je me laissai tomber en arrière, pour voir comment Rina allait tomber.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　敢えて自ら後ろへ転ぶことでリナの体勢を崩そうと試みたのだ。",
-		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2589,13 +2574,8 @@
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　だからレナは、文字通りチャンスを掴もうと、そのわずかの瞬間に、両手で地面を掻く。",
-		   NULL, "Alors je passai mes bras et mes mains sur le sol autour d'elle, tentant littéralement de saisir ma chance, ou en tout cas quelque chose qui pourrait m'aider.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　チャンスを掴もうと、足掻く！",
-		   NULL, "A REMOVE", Line_Normal);
+	OutputLine(NULL, "　だからレナは、文字通りチャンスを掴もうと、そのわずかの瞬間に、両手で地面を掻く。　チャンスを掴もうと、足掻く！",
+		   NULL, "Alors je passai mes bras et mes mains sur le sol autour d'elle, tentant littéralement de saisir ma chance, ou en tout cas quelque chose qui pourrait m'aider.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2646,7 +2626,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その隙を逃さず、レナは横へ転がってようやく難を逃れた。",
-		   NULL, "Profitant de l'ocassion, je me roulai sur le côté pour me mettre en sécurité.", Line_Normal);
+		   NULL, "Profitant de l'occasion, je roulai sur le côté pour me mettre en sécurité.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#cd74a7>リナ</color>", NULL, "<color=#cd74a7>Rina</color>", NULL, Line_ContinueAfterTyping); }
