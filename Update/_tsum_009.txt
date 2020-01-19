@@ -1556,13 +1556,8 @@
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　放課後はとても待ち遠しいけれど。",
-		   NULL, "Nous en avions encore pour un moment avant d'en finir avec l'école, mais même maintenant, dans ces petites conversations et ces petits riens, je ressentis quelque chose de spécial, de... lumineux.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　…こうしてみんなで盛り上がる今の時間にすら、今の俺は輝くものを感じるのだった。",
-		   NULL, "A REMOVE", Line_Normal);
+	OutputLine(NULL, "　放課後はとても待ち遠しいけれど。　…こうしてみんなで盛り上がる今の時間にすら、今の俺は輝くものを感じるのだった。",
+		   NULL, "Nous en avions encore pour un moment avant d'en finir avec l'école, mais même maintenant, dans ces petites conversations et ces petits riens, je ressentis quelque chose de spécial, de... lumineux.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
