@@ -625,13 +625,8 @@
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　酒の力を借りなければ苦い思い出に抗えなかった、一番辛かった時。",
+	OutputLine(NULL, "　酒の力を借りなければ苦い思い出に抗えなかった、一番辛かった時。　たまたま入った店で接客してくれたのがリナだった。",
 		   NULL, "À l'époque où il avait besoin de la force de l'alcool pour lutter contre ses souvenirs, elle l'avait approché alors qu'il était dans un bar qu'il n'avait jamais visité auparavant.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　たまたま入った店で接客してくれたのがリナだった。",
-		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -2237,7 +2232,7 @@
 		   NULL, " C'est pas impossible.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "……今度から魅ぃと麻雀をやる時は、終わった後にも牌の数を調べた方がいいと思いますです。",
 		   NULL, "— ... Je propose de recompter les pièces avant et après chaque partie de mah jong avec toi, Mion...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -2539,13 +2534,8 @@
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　わっはっはっはっは。",
-		   NULL, "Nous partîmes tous les quatre dans de grans éclats de rire.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　あまりに簡単にその様子が想像できたので、みんなで笑った。",
-		   NULL, "A REMOVE", Line_Normal);
+	OutputLine(NULL, "　わっはっはっはっは。　あまりに簡単にその様子が想像できたので、みんなで笑った。",
+		   NULL, "Nous partîmes tous les quatre dans de grans éclats de rire.", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
