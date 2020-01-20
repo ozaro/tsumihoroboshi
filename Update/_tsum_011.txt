@@ -155,14 +155,8 @@
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　レナは辛い日々にずっと耐えて、平穏な日々を取り繕ってくれていた。",
+	OutputLine(NULL, "　レナは辛い日々にずっと耐えて、平穏な日々を取り繕ってくれていた。　そしてそれは取り繕いではなく、本当の平穏な日々になって。",
 		   NULL, "Rena avait subi toutes ces vicissitudes, mais elle avait réussi à retrouver la tranquillité dans son quotidien.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
-
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　そしてそれは取り繕いではなく、本当の平穏な日々になって。",
-		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -1256,7 +1250,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200544", 256, TRUE);
 	OutputLine(NULL, "うわぁあぁあぁあぁああああ！！",
-		   NULL, "ahhaa !!", Line_Continue);
+		   NULL, "Ahhaa !!", Line_Continue);
 	Wait( 6100 );
 	OutputLine(NULL, "　わあああああぁああぁああああ！！！",
 		   NULL, " aaaaaaaAAAAAh !", Line_Continue);
@@ -1637,7 +1631,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100364", 256, TRUE);
 	OutputLine(NULL, "「嘘かどうかはお前が一番知ってるんじゃねえか！！",
-		   NULL, "— Tu devrais pourtant savoir mieux que moi si c'est un mensonge ou pas. non ?", Line_WaitForInput);
+		   NULL, "— Tu devrais pourtant savoir mieux que moi si c'est un mensonge ou pas. Non ?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100365", 256, TRUE);
 	OutputLine(NULL, "　最初から後悔してるんだろ？！",
 		   NULL, " Tu regrettes tout ce que t'as dû faire, c'est pas une preuve, ça ? ", GetGlobalFlag(GLinemodeSp));
@@ -2505,7 +2499,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　レナは仲間を受け入れず一生十字架を背負う人生より、それを共に分かち合う人生を選んだんだ。",
-		   NULL, "Au lieu de choisir de porter sa croix toute seule pour le reste de sa vie, elle avait décider de partager ce fardeau avec ses amis.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Au lieu de choisir de porter sa croix toute seule pour le reste de sa vie, elle avait décidé de partager ce fardeau avec ses amis.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -2542,7 +2536,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　………俺の脳裏に薄っすらと浮かぶ、有り得ない記憶。",
-		   NULL, "Dans ma tête défilaient des images vagues venues d'un autre monde. Des souvenirs que je ne pouvaient pas avoir vécus.", Line_Normal);
+		   NULL, "Dans ma tête défilaient des images vagues venues d'un autre monde. Des souvenirs que je ne pouvait pas avoir vécus.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
