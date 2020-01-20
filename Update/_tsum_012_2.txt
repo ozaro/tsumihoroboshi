@@ -489,7 +489,7 @@
 	Wait( 1600 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "『魅音』",
-		   NULL, " “Mion'", Line_Continue);
+		   NULL, " “Mion”", Line_Continue);
 	OutputLine(NULL, "『ピストル』",
 		   NULL, " avec “le pistolet”", Line_Continue);
 	OutputLine(NULL, "『ラウンジ』ですわー！」",
