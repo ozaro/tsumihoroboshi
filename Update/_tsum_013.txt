@@ -404,7 +404,7 @@
 			   NULL, "Mais cela impliquait forcément que les gens derrière tout ça avaient le bras long.", Line_Normal);
 	} else {
 		OutputLine(NULL, "　でも、それならば、２年目の北条夫妻事故死や、３年目の古手夫妻の病死と自殺、４年目の麻薬常習者の犯人捏造などは、警察などにも強力に影響力を持つ勢力が関与していることになる。",
-			   NULL, "Il leur aurait fallu avoir des liens profonds avec la Police pour pouvoir falsifier les enquêtes sur la mort des Hôjô, ou le suicide de Madame Furude, ou même créer de toutes pièces ce drogué qui s'est accusé du meurtre de la tante.", Line_Normal);
+			   NULL, "Il leur aurait fallu avoir des liens profonds avec la Police pour pouvoir falsifier les enquêtes sur la mort des Hôjô, ou le suicide de Madame Furude, ou même créer de toutes pièces ce drogué qui s'est accusé du meurtre de la tante. Mais cela impliquait forcément que les gens derrière tout ça avaient le bras long.", Line_Normal);
 	}
 	ClearMessage();
 
