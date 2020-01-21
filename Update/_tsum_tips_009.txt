@@ -68,14 +68,8 @@
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　患者に接する人間には、患者が現在治療中であることを理解させ、妄想に感応しないよう充分に注意を促す必要があるでしょう。",
-		   NULL, "Il faut absolument informer le père de la dangerosité de la situation et du risque qu'il encourt s'il parle à sa fille sans garder à l'esprit qu'elle est malade mentalement et qu'elle est sous traitement médical.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
-
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　なお、感応しやすい人間としては、家族、もしくは恋人のような親身になってくれる人間が挙げられます。",
-		   NULL, "A REMOVE", Line_Normal);
+	OutputLine(NULL, "　患者に接する人間には、患者が現在治療中であることを理解させ、妄想に感応しないよう充分に注意を促す必要があるでしょう。　なお、感応しやすい人間としては、家族、もしくは恋人のような親身になってくれる人間が挙げられます。",
+		   NULL, "Il faut absolument informer le père de la dangerosité de la situation et du risque qu'il encourt s'il parle à sa fille sans garder à l'esprit qu'elle est malade mentalement et qu'elle est sous traitement médical.", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
