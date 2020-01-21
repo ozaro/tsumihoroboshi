@@ -870,7 +870,7 @@
 		   NULL, "Quant aux souches de virus tellement fortes qu'elles provoquaient des symptômes même chez des gens résistants, eh bien c'est rebelote : leurs hôtes sont devenus fous et ils sont morts, emportant la souche virulente avec eux.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200874", 256, TRUE);
 	OutputLine(NULL, "その結果、寄生虫と人間は互いに相性がいい種だけが残っていった。",
-		   NULL, " — Du coup, les seuls humains qui sont restés en vie ici sont tous résistants, ou bien alors, seuls les parasites les moins violents ont pu survivre. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Du coup, les seuls humains qui sont restés en vie ici sont tous résistants, ou bien alors, seuls les parasites les moins violents ont pu survivre. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200875", 256, TRUE);
 	OutputLine(NULL, "……これこそが、オヤシロさまの伝説が伝える、鬼と人の血は混じり合ったことの真相。」",
@@ -1261,7 +1261,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だが寄生虫は、これによって駆逐されることを逃れるため、IgE を不活性化させる物質を分泌する。",
-		   NULL, "Sauf que le parasite, pas stupide, pour ne pas se faire éliminer, va libérer des agents chimiques qui vont neutraliser l'immuniglobine E.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Sauf que le parasite, pas stupide, pour ne pas se faire éliminer, va libérer des agents chimiques qui vont neutraliser l'immunoglobine E.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
