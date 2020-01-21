@@ -66,13 +66,8 @@
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　間宮リナに北条鉄平。",
+	OutputLine(NULL, "　間宮リナに北条鉄平。　人間が二人も蒸発しているのだ。",
 		   NULL, "Rina Mamiya et Teppei Hôjô avaient disparu dans la nature.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　人間が二人も蒸発しているのだ。",
-		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -215,7 +210,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　声が大きいと叱られる。",
-		   NULL, "— Moins fort !", Line_WaitForInput);
+		   NULL, "Moins fort !", Line_WaitForInput);
 	OutputLine(NULL, "俺は声を小さくし、レナに先を促した。",
 		   NULL, " Rena prit une voix plus faible pour continuer.", Line_Normal);
 	ClearMessage();
@@ -1449,7 +1444,7 @@
 		   NULL, "— Dis-voir, Grand, t'es rentré direct ? Tu viens de l'école, là hein ?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 14, "ps3/s09/14/173400004", 256, TRUE);
 	OutputLine(NULL, "　ちょうど文房具屋の角を曲がってぇ、」",
-		   NULL, " T'as tourné au magasin,", GetGlobalFlag(GLinemodeSp));
+		   NULL, " T'as tourné au magasin ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
@@ -1519,7 +1514,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100586", 256, TRUE);
 	OutputLine(NULL, "「……い、…いいえ…！",
-		   NULL, "— ... Euh, ben, Non, non, non,", Line_WaitForInput);
+		   NULL, "— ... Euh, ben, non, non, non,", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100587", 256, TRUE);
 	OutputLine(NULL, "　会ってないです……。」",
 		   NULL, " je l'ai pas vue.", GetGlobalFlag(GLinemodeSp));
