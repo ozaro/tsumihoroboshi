@@ -42,11 +42,8 @@
 	DrawSceneWithMask( "background/Sora", "maskup", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　この村に、普通じゃ考えられない怪しげな風土病が蔓延していて、…それを利用した怪しげな宗教の復活を目論む狂信者たちがいて。",
-		   NULL, "Alors soi-disant, il y aurait une maladie bien spéciale dans la région, et un groupe de fanatiques religieux voudrait découvrir son agent pathogène pour la rendre plus nocive et la propager, dans le but de répandre leur culte... ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "…そして、その風土病の病原体を研究していて村にバラまこうとしている…。",
-		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "　この村に、普通じゃ考えられない怪しげな風土病が蔓延していて、…それを利用した怪しげな宗教の復活を目論む狂信者たちがいて。…そして、その風土病の病原体を研究していて村にバラまこうとしている…。",
+		   NULL, "Alors soi-disant, il y aurait une maladie bien spéciale dans la région, et un groupe de fanatiques religieux voudrait découvrir son agent pathogène pour la rendre plus nocive et la propager, dans le but de répandre leur culte...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -324,10 +321,8 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　……人間は図星を突かれたら、こうも平静は保てない。",
-		   NULL, "Ce n'était pas la réaction de quelqu'un dont le pire secret a été découvert.", Line_WaitForInput);
-	OutputLine(NULL, "必ず、わずかな反応を見せるはずなのだ。",
-		   NULL, " A REMOVE", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "　……人間は図星を突かれたら、こうも平静は保てない。必ず、わずかな反応を見せるはずなのだ。",
+		   NULL, "Ce n'était pas la réaction de quelqu'un dont le pire secret a été découvert.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -2074,12 +2069,12 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……知恵先生は私の登校を確認した上で連絡し、",
-		   NULL, "... Je parie que c'est elle qui les a prévenus que j'étais à l'école aujourd'hui...", Line_ContinueAfterTyping);
+		   NULL, "... Je parie que c'est elle qui les a prévenus", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 700 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…彼らを呼び寄せた…？！",
-		   NULL, " A REMOVE", GetGlobalFlag(GLinemodeSp));
+		   NULL, " que j'étais à l'école aujourd'hui...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -2672,12 +2667,7 @@
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　……言いそう？",
-		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　違う、言ったのだ！",
+	OutputLine(NULL, "　……言いそう？　違う、言ったのだ！",
 		   NULL, "Non, tu l'as entendu, parce qu'elle l'a réellement dit !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
