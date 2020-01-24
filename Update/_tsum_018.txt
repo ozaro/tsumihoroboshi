@@ -465,7 +465,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私が戦わなければ、きっと村は恐ろしい寄生虫をバラまかれて大変なことになる。",
-		   NULL, "Si je ne bats pas, alors le parasite sera propagé dans le village, et les conséquences seront terribles.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Si je ne me bats pas, alors le parasite sera propagé dans le village, et les conséquences seront terribles.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
