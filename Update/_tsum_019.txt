@@ -452,10 +452,10 @@
 		   NULL, "— Eh bien en fait,", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201031", 256, TRUE);
 	OutputLine(NULL, "三四さんは雛見沢村の歴史について深く研究していたんです。",
-		   NULL, " Miyo étudiait la culture et l'histoire de Hinamizawa..", Line_WaitForInput);
+		   NULL, " Miyo étudiait la culture et l'histoire de Hinamizawa.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201032", 256, TRUE);
 	OutputLine(NULL, "そしてそれらを数冊のスクラップ帖にまとめていました。",
-		   NULL, " Et elle a tout consigné dans des cahiers ", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Et elle a tout consigné dans des cahiers. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201033", 256, TRUE);
 	OutputLine(NULL, "……やつらは三四さんを殺した時、スクラップ帖が何冊か足りないのに気付き、それを私に託していたことを気付いたのだと思います。」",
@@ -1310,10 +1310,8 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　………それくらいに、…恐ろしいものが登ってくるのだ。",
-		   NULL, "C'était vraiment une chose inéluctable qui me remontait tout doucement dans chaque fibre de mon corps.", Line_WaitForInput);
-	OutputLine(NULL, "……じりじり、じわじわと…。",
-		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "　………それくらいに、…恐ろしいものが登ってくるのだ。……じりじり、じわじわと…。",
+		   NULL, "C'était vraiment une chose inéluctable qui me remontait tout doucement dans chaque fibre de mon corps.", Line_Normal);
 	ClearMessage();
 
 	FadeOutBGM( 1, 300, FALSE );
