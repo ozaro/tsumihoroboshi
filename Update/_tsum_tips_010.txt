@@ -86,7 +86,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　患者のケースでは、これら了解不能な妄想が累積し、",
-		   NULL, "Dans le cas de cette patiente, les événements incompréhensibles se sont succédé,", Line_ContinueAfterTyping);
+		   NULL, "Dans le cas de cette patiente, les événements incompréhensibles se sont succédés,", Line_ContinueAfterTyping);
 	OutputLine(NULL, "「文化依存症候群」と併発することで「解釈妄想病」を誘発し、",
 		   NULL, " jusqu'à ce que le syndrome lié à la culture finisse par provoquer un délire d'interprétation.", GetGlobalFlag(GLinemodeSp));
 
@@ -137,11 +137,8 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
-	OutputLine(NULL, "（例えば、カルト教壇の教祖のパラノイアに集団感応した信者たちが、",
-		   NULL, "(Par extension, et même si le cas ne s'est encore jamais présenté au Japon, on peut tout à fait imaginer un groupe de personnes soudées autour d'une personnalité religieuse, dans une secte, qui seraient contaminées par sa schizophrénie, et qui, dans un pur mécanisme de défense, se mettraient à vivre ensemble, dans une communauté, à l'écart du reste des individus.) ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "集団で「陰謀妄想」に転じ、自衛と称して反社会的な行為に踏み切ることは、まだ日本では報告例がありませんが、近い将来にありえるかもしれません）",
-		   NULL, "A REMOVE", Line_Normal);
+	OutputLine(NULL, "（例えば、カルト教壇の教祖のパラノイアに集団感応した信者たちが、集団で「陰謀妄想」に転じ、自衛と称して反社会的な行為に踏み切ることは、まだ日本では報告例がありませんが、近い将来にありえるかもしれません）",
+		   NULL, "(Par extension, et même si le cas ne s'est encore jamais présenté au Japon, on peut tout à fait imaginer un groupe de personnes soudées autour d'une personnalité religieuse, dans une secte, qui seraient contaminées par sa schizophrénie, et qui, dans un pur mécanisme de défense, se mettraient à vivre ensemble, dans une communauté, à l'écart du reste des individus.) ", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 0, "s_page", 56, 64 );
