@@ -333,7 +333,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……でも、これだけ大々的に動いているのだから、限りなくクロに近い何かを掴んでいるのは間違いない……。",
-		   NULL, "Mais ils avaient sûrement de sacrés certitudes pour la rechercher avec autant de moyens !", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Mais ils avaient sûrement de sacrées certitudes pour la rechercher avec autant de moyens !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
