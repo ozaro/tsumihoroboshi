@@ -993,14 +993,14 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　いや、…………現れる。",
-		   NULL, "Je dirais même qu'ils sont déjà probablement apparus sur Terre.", Line_WaitForInput);
+		   NULL, "Je dirais même", Line_WaitForInput);
 	OutputLine(NULL, "もう、",
-		   NULL, " A REMOVE", Line_ContinueAfterTyping);
+		   NULL, " qu'ils sont déjà probablement", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "現れてる。",
-		   NULL, " A REMOVE", Line_Normal);
+		   NULL, " apparus sur Terre.", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "background/aka1", 400 );
@@ -2190,7 +2190,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それは明白な破滅の予告であり、……恐るべき終末が間近に迫っていることを如実に示しているのだ…。",
-		   NULL, "Elle parlait clairement de l'apocalypse final. Elle savait pertinemment que la fin était proche...", Line_Normal);
+		   NULL, "Elle parlait clairement de l'apocalypse finale. Elle savait pertinemment que la fin était proche...", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
