@@ -204,13 +204,8 @@
 	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　彼の名は赤坂衛。",
+	OutputLine(NULL, "　彼の名は赤坂衛。　東京の警視庁に勤めるベテランの刑事だった。",
 		   NULL, "Mamoru Akasaka était un vétéran de la DST, à Tôkyô.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　東京の警視庁に勤めるベテランの刑事だった。",
-		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -551,7 +546,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ミステリーマニアたちが根拠とするのは「３４号文書」と呼ばれるある秘密ファイルの存在だった。",
-		   NULL, "Les fanas de mystères se basaient sur l'existence prétendue d'un manuel secret, appelé “la circulaire n°  34”.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Les fanas de mystères se basaient sur l'existence prétendue d'un manuel secret, appelé “la circulaire n°34”.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -588,7 +583,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　「３４号文書」は、雛見沢の診療所に勤務していた鷹野三四という看護婦が残した手記である。",
-		   NULL, "La circulaire n°  34 serait en fait le journal tenu par Miyo Takano, infirmière en poste à la clinique de Hinamizawa.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "La circulaire n°34 serait en fait le journal tenu par Miyo Takano, infirmière en poste à la clinique de Hinamizawa.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1020,7 +1015,7 @@
 		   NULL, "— Et si…", Line_Continue);
 	Wait( 2900 ); // autofix multiline voice
 	OutputLine(NULL, "これが本物の『３４号文書』だとしたら？」",
-		   NULL, " je vous disais que ce cahier, là, celui que je tiens en main, est la copie originale de la circulaire n°  34 ?", GetGlobalFlag(GLinemodeSp));
+		   NULL, " je vous disais que ce cahier, là, celui que je tiens en main, est la copie originale de la circulaire n°34 ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>士官</color>", NULL, "<color=#f5e6d3>Officier de l'armée</color>", NULL, Line_ContinueAfterTyping); }
@@ -1339,7 +1334,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その図式は、どことなく、「３４号文書」に踊らされた竜宮礼奈に似なくもない。",
-		   NULL, "Cette manière de procéder ressemblait à l'effet qu'avait eu cette circulaire n°  34 sur Reina Ryûgû.", Line_Normal);
+		   NULL, "Cette manière de procéder ressemblait à l'effet qu'avait eu cette circulaire n°34 sur Reina Ryûgû.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1357,7 +1352,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ならば、この「３４号文書」はカルトにとっての経典なのか？",
-		   NULL, "Ce qui reviendrait alors à dire que la circulaire n°  34 était un peu une bible ?", Line_Normal);
+		   NULL, "Ce qui reviendrait alors à dire que la circulaire n°34 était un peu une bible ?", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
