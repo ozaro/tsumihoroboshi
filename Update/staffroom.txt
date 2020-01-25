@@ -56,7 +56,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　例えば、学校である人にいじめられているとする。",
-		   NULL, "Imaginons un enfant bizuthé à l'école.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Imaginons un enfant bizuté à l'école.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -71,7 +71,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　いじめっ子は大抵、喧嘩にも強く人数も多いでしょうから、自分一人が挑んだところで「取り除く」ことはできません。",
-		   NULL, "La plupart du temps, les enfants bizuthés ne peuvent rien contre leurs bourreaux, car ceux-ci agissent très souvent à plusieurs et sont habitués à cogner.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "La plupart du temps, les enfants bizutés ne peuvent rien contre leurs bourreaux, car ceux-ci agissent très souvent à plusieurs et sont habitués à cogner.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
