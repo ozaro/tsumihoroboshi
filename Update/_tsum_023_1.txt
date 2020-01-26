@@ -514,13 +514,8 @@
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　熊谷が大石をなだめる。",
-		   NULL, "Les mafieux et les policiers fonctionnaient tous deux sur le même schéma : il y avait le méchant et le gentil pour le calmer.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　警察も暴力団と同じで、凄む役となだめる役がペアになっているということだろう。",
-		   NULL, "A REMOVE", Line_Normal);
+	OutputLine(NULL, "　熊谷が大石をなだめる。　警察も暴力団と同じで、凄む役となだめる役がペアになっているということだろう。",
+		   NULL, "Les mafieux et les policiers fonctionnaient tous deux sur le même schéma : il y avait le méchant et le gentil pour le calmer.", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -986,7 +981,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……実は誰もが心の中で、寄生虫なんているわけない、細菌テロなんて大袈裟なと思っていた。",
-		   NULL, "Ils avaient tous pensé que c'est histoire de terrorisme, c'était du n'importe quoi, qu'il avait exagéré et forcé le trait.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Ils avaient tous pensé que cette histoire de terrorisme, c'était du n'importe quoi, qu'il avait exagéré et forcé le trait.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1564,7 +1559,7 @@
 		   NULL, " Rena Ryûgû est une enfant qui se berce d'illusions.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s09/03/170300599", 256, TRUE);
 	OutputLine(NULL, "当家で速やかに身柄を確保した上で、然るべき治療を受けられる医療機関を手配します。",
-		   NULL, " Ni nous devions la trouver avant vos effectifs, nous la placerons dans une clinique pour qu'elle y reçoive un traitement médical adapté à sa condition. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Si nous devions la trouver avant vos effectifs, nous la placerons dans une clinique pour qu'elle y reçoive un traitement médical adapté à sa condition. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s09/03/170300600", 256, TRUE);
 	OutputLine(NULL, "これは当人の権利でもあります。」",
