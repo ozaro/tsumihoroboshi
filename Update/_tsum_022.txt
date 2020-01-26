@@ -614,9 +614,9 @@
 	OutputLine(NULL, "その子の痛がり方が尋常じゃなくて、",
 		   NULL, " en voyant sa réaction,", Line_WaitForInput);
 	OutputLine(NULL, "俺はその時になって初めて、",
-		   NULL, " j'ai enfin réalisé que ce que je faisais était horrible et dangereux.", Line_WaitForInput);
+		   NULL, " j'ai enfin réalisé que", Line_WaitForInput);
 	OutputLine(NULL, "自分が何て恐ろしいことをしていたんだろうと気付いた。",
-		   NULL, " A REMOVE", Line_Normal);
+		   NULL, " ce que je faisais était horrible et dangereux.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1441,12 +1441,12 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　俺の目から…大粒の涙が、",
-		   NULL, "Des larmes grosses comme des billes roulaient sur mes joues pour dégoutter sur mon pupitre.", Line_ContinueAfterTyping);
+		   NULL, "Des larmes grosses comme des billes roulaient sur mes joues", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……ぼたりと落ちて…。",
-		   NULL, " A REMOVE", GetGlobalFlag(GLinemodeSp));
+		   NULL, " pour dégoutter sur mon pupitre.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1901,9 +1901,9 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　明日こそ元気になってね。",
-		   NULL, "Il était évident qu'elles ont voulu repartir plus tôt pour me permettre de me reposer !", Line_WaitForInput);
+		   NULL, "Il était évident qu'elles ont voulu repartir plus tôt", Line_WaitForInput);
 	OutputLine(NULL, "みんなで一緒に部活で遊ぼうね！",
-		   NULL, " A REMOVE", GetGlobalFlag(GLinemodeSp));
+		   NULL, " pour me permettre de me reposer !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -2263,17 +2263,17 @@
 	SetSpeedOfMessage( TRUE, 128 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　早く、",
-		   NULL, " Reviens-nous très vite en forme☆! Mion", Line_ContinueAfterTyping);
+		   NULL, " Reviens-nous", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "元気になぁれ☆",
-		   NULL, " A REMOVE", Line_ContinueAfterTyping);
+		   NULL, " très vite en forme☆!", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 900 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "　魅音",
-		   NULL, " A REMOVE", Line_ContinueAfterTyping);
+		   NULL, " Mion", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
