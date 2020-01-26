@@ -821,12 +821,12 @@
 	Wait( 500 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "なんて…………、",
-		   NULL, " Comment fait-elle...", Line_ContinueAfterTyping);
+		   NULL, " Comment", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 500 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "なんて…………、",
-		   NULL, " A REMOVE", Line_Normal);
+		   NULL, " fait-elle...", Line_Normal);
 	ClearMessage();
 
 	ModDrawCharacter(0, 2, "sprite/re2b_nande_b1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
@@ -1111,9 +1111,9 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……こんなにも、幸せな時間を取り戻すことを願っているのに……。",
-		   NULL, "C'était terrible de voir que je n'arrivais pas à dissiper les ténèbres qui obscurcissaient son esprit...", Line_WaitForInput);
+		   NULL, "C'était terrible de voir", Line_WaitForInput);
 	OutputLine(NULL, "レナの心を支配する暗闇が、掃えないなんて………。",
-		   NULL, " A REMOVE", Line_Normal);
+		   NULL, " que je n'arrivais pas à dissiper les ténèbres qui obscurcissaient son esprit...", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -1374,22 +1374,22 @@
 	OutputLine(NULL, "………俺は勝てなかったけど、",
 		   NULL, " Moi, dans ta situation, j'ai perdu les pédales et ça a très mal fini...", Line_WaitForInput);
 	OutputLine(NULL, "……お前なら、",
-		   NULL, " mais toi ! Toi, en fait, tu as peut-être une chance de gagner et de t'en sortir !", Line_WaitForInput);
+		   NULL, " mais toi !", Line_WaitForInput);
 	OutputLine(NULL, "……最期の瞬間まで信じる心を教え続けてくれたお前なら、",
-		   NULL, " Alors oui, c'est vrai que la victoire dont je parle n'est pas la même que celle que Rena s'imagine obtenir.", Line_WaitForInput);
+		   NULL, " Toi, en fait,", Line_WaitForInput);
 	OutputLine(NULL, "……きっと勝てるから…！！",
-		   NULL, " Mais Rena vaincra.", Line_Normal);
+		   NULL, " tu as peut-être une chance de gagner et de t'en sortir !", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それはレナが言う最後の戦いの勝利という意味ではない。",
-		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Alors oui, c'est vrai que la victoire dont je parle n'est pas la même que celle que Rena s'imagine obtenir.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　レナはきっと勝つ。",
-		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Mais Rena vaincra.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
