@@ -14,7 +14,7 @@
 		   NULL, "— Eh, mais qui êtes vous, vous ?", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大高</color>", NULL, "<color=#f5e6d3>Ôtaka</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大高</color>", NULL, "<color=#f5e6d3>Ôdaka</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps2/00/ootaka17001", 540, TRUE);
 	OutputLine(NULL, "「退きたまえ。",
 		   NULL, "— Retirez-vous immédiatement.", Line_WaitForInput);
@@ -46,7 +46,7 @@
 		   NULL, " T'es passé au Commissariat Central, hein ? Ça fait un bail, grand !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大高</color>", NULL, "<color=#f5e6d3>Ôtaka</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大高</color>", NULL, "<color=#f5e6d3>Ôdaka</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps2/00/ootaka17003", 540, TRUE);
 	OutputLine(NULL, "「言葉を慎みたまえ。",
 		   NULL, "— Tu vas me parler sur un autre ton, Ôishi.", Line_WaitForInput);
@@ -70,7 +70,7 @@
 		   NULL, " Et qui t'as donné l'autorisation de venir ici, déjà ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>署長</color>", NULL, "<color=#f5e6d3>Cief of Police</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>署長</color>", NULL, "<color=#f5e6d3>Chef de la police</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s09/00/syocho17001", 256, TRUE);
 	OutputLine(NULL, "「私が許可した、大石くん！」",
 		   NULL, "— C'est moi qui l'y ai autorisé, Ôishi !", GetGlobalFlag(GLinemodeSp));
@@ -85,7 +85,7 @@
 		   NULL, "— Ah tiens, Grand Chef ?", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>署長</color>", NULL, "<color=#f5e6d3>Cief of Police</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>署長</color>", NULL, "<color=#f5e6d3>Chef de la police</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s09/00/syocho17002", 256, TRUE);
 	OutputLine(NULL, "「高杉くんから事情は聞いている。",
 		   NULL, "— Takasugi m'a expliqué la situation.", Line_WaitForInput);
@@ -103,7 +103,7 @@
 		   NULL, "— La QUOI ? Ôdaka, me dis pas que tu veux y aller en force ?!", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大高</color>", NULL, "<color=#f5e6d3>Ôtaka</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大高</color>", NULL, "<color=#f5e6d3>Ôdaka</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps2/00/ootaka17005", 540, TRUE);
 	OutputLine(NULL, "「危険は重々承知だ。",
 		   NULL, "— Je sais très bien que c'est dangereux,", Line_WaitForInput);
@@ -156,7 +156,7 @@
 		   NULL, "Il apparaissait évident que les deux se connaissaient depuis longtemps, et qu'ils n'étaient vraiment pas en bons termes.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大高</color>", NULL, "<color=#f5e6d3>Ôtaka</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大高</color>", NULL, "<color=#f5e6d3>Ôdaka</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps2/00/ootaka17010", 540, TRUE);
 	OutputLine(NULL, "「大石くん、現在の最新の状況を説明したまえ。」",
 		   NULL, "— Ôishi, explique-moi la situation.", GetGlobalFlag(GLinemodeSp));
@@ -174,7 +174,7 @@
 		   NULL, " Tu veux tout foutre en l'air ou quoi ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大高</color>", NULL, "<color=#f5e6d3>Ôtaka</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大高</color>", NULL, "<color=#f5e6d3>Ôdaka</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps2/00/ootaka17011", 540, TRUE);
 	OutputLine(NULL, "「もう遅過ぎる。",
 		   NULL, "— Il est trop tard.", Line_WaitForInput);
@@ -231,7 +231,7 @@
 		   NULL, " Vous n'avez qu'à rester à l'écart et si tout pète, vous pourrez vous foutre de moi !", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>署長</color>", NULL, "<color=#f5e6d3>Cief of Police</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>署長</color>", NULL, "<color=#f5e6d3>Chef de la police</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s09/00/syocho17005", 256, TRUE);
 	OutputLine(NULL, "「大石くん。",
 		   NULL, "— Ôishi.", Line_WaitForInput);
@@ -284,7 +284,7 @@
 		   NULL, "Le commissaire divisionnaire eut un large sourire arrogant.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大高</color>", NULL, "<color=#f5e6d3>Ôtaka</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大高</color>", NULL, "<color=#f5e6d3>Ôdaka</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps2/00/ootaka17015", 540, TRUE);
 	OutputLine(NULL, "「たまたま県警機動隊との交流訓練があってね。",
 		   NULL, "— Ils étaient justement en train d'entraîner nos hommes quand nous avons entendu pour ton affaire,", Line_WaitForInput);
@@ -330,7 +330,7 @@
 		   NULL, " Au premier coup de feu, l'école va exploser !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大高</color>", NULL, "<color=#f5e6d3>Ôtaka</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大高</color>", NULL, "<color=#f5e6d3>Ôdaka</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps2/00/ootaka17017", 540, TRUE);
 	OutputLine(NULL, "「安心したまえ。",
 		   NULL, "— Pour ça, pas de souci.", Line_WaitForInput);
@@ -360,7 +360,7 @@
 		   NULL, " Mais c'est très pratique, dis-moi. Et ils peuvent tirer d'ici jusque dans la salle de classe, à travers les murs ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大高</color>", NULL, "<color=#f5e6d3>Ôtaka</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大高</color>", NULL, "<color=#f5e6d3>Ôdaka</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps2/00/ootaka17022", 540, TRUE);
 	OutputLine(NULL, "「それは君が心配することではない。",
 		   NULL, "— Ce n'est pas à toi de te préoccuper de ce problème.", Line_WaitForInput);

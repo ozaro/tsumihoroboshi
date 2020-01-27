@@ -1185,7 +1185,7 @@
 		   NULL, " Le preneur d'otage est monté à l'étage, à la poursuite du dernier élève !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大高</color>", NULL, "<color=#f5e6d3>Ôtaka</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大高</color>", NULL, "<color=#f5e6d3>Ôdaka</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps2/00/ootaka17024", 540, TRUE);
 	OutputLine(NULL, "「こ、こら！　何の真似だね！！　お、大石くん、無線を返したまッグギャッ……？！　…あ………ぐぐぐぐぐぐ……」",
 		   NULL, "— Eh ben alors, Ôishi, qu'est-ce que c'est que ce cirque ?", Line_Normal);
@@ -1316,7 +1316,7 @@
 		   NULL, " Espèce de petit con, tu comptais faire quoi en voyant qu'ils ne pouvaient pas enfoncer la porte, hein ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大高</color>", NULL, "<color=#f5e6d3>Ôtaka</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大高</color>", NULL, "<color=#f5e6d3>Ôdaka</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps2/00/ootaka17025", 540, TRUE);
 	OutputLine(NULL, "「そ、…それに失敗しないための特殊部隊だ…。」",
 		   NULL, "— Ces hommes ne sont pas payés pour être bloqués devant des portes...", Line_Normal);
@@ -4856,7 +4856,7 @@
 
 	DrawSceneWithMask( "background/kuruma4", "maskleft", 7, 0, 300 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大高</color>", NULL, "<color=#f5e6d3>Ôtaka</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大高</color>", NULL, "<color=#f5e6d3>Ôdaka</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps2/00/ootaka17026", 540, TRUE);
 	OutputLine(NULL, "「…そ、狙撃班は何をしてるのかね！！",
 		   NULL, "— Eh bien alors, unité tireur d'élite ! Qu'est-ce que vous foutez ?", Line_WaitForInput);
@@ -4897,7 +4897,7 @@
 		   NULL, " Ne tirez pas ! NE TIREZ PAS !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大高</color>", NULL, "<color=#f5e6d3>Ôtaka</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大高</color>", NULL, "<color=#f5e6d3>Ôdaka</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps2/00/ootaka17029", 540, TRUE);
 	OutputLine(NULL, "「ち、違うとはどういう意味かね…！",
 		   NULL, "— Ah oui ?", Line_WaitForInput);
@@ -4939,7 +4939,7 @@
 		   NULL, " Et ce n'est pas une menace, c'est une promesse !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大高</color>", NULL, "<color=#f5e6d3>Ôtaka</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大高</color>", NULL, "<color=#f5e6d3>Ôdaka</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps2/00/ootaka17034", 540, TRUE);
 	OutputLine(NULL, "「どど、どうして私をなのかね…ッ？！？！」",
 		   NULL, "— M-m-mais pourquoi c'est moi qui devrais mourir ?!", Line_Normal);
