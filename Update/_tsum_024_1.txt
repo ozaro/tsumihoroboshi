@@ -132,12 +132,12 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　………何を切っ掛けに世界が狂い始めたのか、",
-		   NULL, "Je ne vis pas trop quel avait été l'élément déclencheur, en fait.", Line_ContinueAfterTyping);
+		   NULL, "Je ne vis pas trop", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 600 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…よく思い出せない。",
-		   NULL, " A REMOVE", Line_Normal);
+		   NULL, " quel avait été l'élément déclencheur, en fait.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
