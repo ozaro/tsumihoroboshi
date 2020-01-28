@@ -966,7 +966,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……一斉捜査をしたことにするか、していないことにするか！",
-		   NULL, "Je pourrais lui mentir et lui dire que c'est en court. Ou bien lui dire la vérité.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Je pourrais lui mentir et lui dire que c'est en cours. Ou bien lui dire la vérité.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -2427,13 +2427,8 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……いや、教室どころじゃない、",
 		   NULL, "D'ailleurs, en regardant bien, je remarquai un détail encore pire que tout...", Line_WaitForInput);
-	OutputLine(NULL, "……人質のみんなにも振りかけたみたいだ。",
-		   NULL, " Elle en avait aussi versé sur les otages !", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　………なんて事を！",
-		   NULL, "A REMOVE", Line_Normal);
+	OutputLine(NULL, "……人質のみんなにも振りかけたみたいだ。　………なんて事を！",
+		   NULL, " Elle en avait aussi versé sur les otages !", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -4391,7 +4386,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　魅音は、園崎家の立場上、死体を隠したことを口にすることができず、無言で耐えるしかなかった…。",
-		   NULL, "Bien sûr, Mion ne pouvait pas avouer qu'elle avait caché les corps -- elle avait sa position d'héritière du Clan, et le déshonneur de ses aveux aurait des répercussion gigantesques. Il lui fallait donc garder le silence et encaisser.", Line_Normal);
+		   NULL, "Bien sûr, Mion ne pouvait pas avouer qu'elle avait caché les corps -- elle avait sa position d'héritière du Clan, et le déshonneur de ses aveux aurait des répercussions gigantesques. Il lui fallait donc garder le silence et encaisser.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
