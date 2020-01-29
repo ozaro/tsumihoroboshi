@@ -22,7 +22,7 @@
 //rレナをこの場で取り押さえたいが、それよりも優先すべきは、装置の発見だ。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "レナをこの場で取り押さえたいが、それよりも優先すべきは、装置の発見だ。",
-			NULL, "On a réussi à retenir Rena, mais ca n'aura servi à rien si on trouve pas le détonateur.", Line_Normal);
+			NULL, "On a réussi à retenir Rena, mais ça n'aura servi à rien si on ne trouve pas le détonateur.", Line_Normal);
 	ClearMessage();
 
 //r頼む…………沙都子、お前だけが頼りなんだ！！
@@ -91,7 +91,7 @@
 //r懸命に気持ちを奮い立たせた俺は、間合いをつめてきたレナの攻撃に対して身体をひねりながら、辛うじてかわす。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "懸命に気持ちを奮い立たせた俺は、間合いをつめてきたレナの攻撃に対して身体をひねりながら、辛うじてかわす。",
-			NULL, "La poussée d’adrénaline qui suivit me permis d’esquiver de justesse le coup de Rena. ", Line_Normal);
+			NULL, "La poussée d’adrénaline qui suivit me permis d’esquiver de justesse le coup de Rena.", Line_Normal);
 	ClearMessage();
 
 	PlaySE(3, "s_tataku", 256, 64);
