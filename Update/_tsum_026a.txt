@@ -198,7 +198,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　梨花はさっきの倉庫から転げる時に、倉庫内からあふれ出たモップを拾い、逆さに持って、槍を構えるようにレナに向ける。",
-		   NULL, "Rika fit un pas en arrière et tâtonna près du mur pour saisir l'un des nombreux balais de bois qui traînaient dans la remise. Elle s'en saisit et le retouna, pas vraiment comme une lance, mais plûtot comme une pertuisane ou une faux de guerre.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Rika fit un pas en arrière et tâtonna près du mur pour saisir l'un des nombreux balais de bois qui traînaient dans la remise. Elle s'en saisit et le retourna, pas vraiment comme une lance, mais plûtot comme une pertuisane ou une faux de guerre.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -546,16 +546,16 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ガソリンが、",
-		   NULL, "Elle a placé de l'essence en haut ?", Line_ContinueAfterTyping);
+		   NULL, "Elle a placé de l'essence", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 600 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…上から、降りて。",
-		   NULL, " Dehors ?", Line_WaitForInput);
+		   NULL, " en haut ?", Line_WaitForInput);
 	OutputLine(NULL, "…ボール？",
-		   NULL, " Avec la balle ?", Line_WaitForInput);
+		   NULL, " Dehors ?", Line_WaitForInput);
 	OutputLine(NULL, "　詰めて。",
-		   NULL, " A REMOVE", Line_Normal);
+		   NULL, " Avec la balle ?", Line_Normal);
 	ClearMessage();
 
 	FadeOutBGM( 1, 400, FALSE );
@@ -2044,13 +2044,8 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　逃げも隠れもしない。",
 		   NULL, "Je n'avais ni l'intention de fuir, ni de refuser de me battre.", Line_WaitForInput);
-	OutputLine(NULL, "…どうしてか？",
-		   NULL, " Pour la bonne et simple raison que dans nos règles de jeu, la fuite devant l'ennemi n'était pas autorisée !", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　俺たちの部の会則に敵前逃亡はないからだよ！！",
-		   NULL, "A REMOVE", Line_Normal);
+	OutputLine(NULL, "…どうしてか？　俺たちの部の会則に敵前逃亡はないからだよ！！",
+		   NULL, " Pour la bonne et simple raison que dans nos règles de jeu, la fuite devant l'ennemi n'était pas autorisée !", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
@@ -2165,7 +2160,7 @@
 		   NULL, "— Si tu arrives à me tuer, alors je veux bien croire à tes histoires stupides d'extra-terrestres !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s09/01/170101406", 256, TRUE);
 	OutputLine(NULL, "　朝晩、ＵＦＯを呼ぶ怪しげな踊りをして、牛小屋にキャトルミューティレーションに行ってやらあ！！",
-		   NULL, " Je ferai des danses bizarres avec toi matin et soir pour faire des signes aux astronefs ! Et on ira scarrifier le bétail pendant la nuit !", Line_WaitForInput);
+		   NULL, " Je ferai des danses bizarres avec toi matin et soir pour faire des signes aux astronefs ! Et on ira scarifier le bétail pendant la nuit !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s09/01/170101407", 256, TRUE);
 	OutputLine(NULL, "　だがなレナ。",
 		   NULL, " Mais en contrepartie, Rena, ", GetGlobalFlag(GLinemodeSp));
@@ -4347,16 +4342,8 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　２人の伯仲する戦いはただただ純粋さと熱さに満ち溢れていて、……誰もがこう思うんだ！",
-		   NULL, "La vision de ces deux êtres innocents, transcendés dans l'excitation du moment, les avaient tous rendus jaloux !", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　あぁ畜生、俺も混ざりたいってなッ！！",
-		   NULL, "'We want to join them!!'", Line_Normal);
+	OutputLine(NULL, "　２人の伯仲する戦いはただただ純粋さと熱さに満ち溢れていて、……誰もがこう思うんだ！　あぁ畜生、俺も混ざりたいってなッ！！",
+		   NULL, "La vision de ces deux êtres innocents, transcendés dans l'excitation du moment, les avaient tous rendus jaloux !", Line_Normal);
 	ClearMessage();
 
 	ModDrawCharacter(0, 2, "sprite/renasen2_warai_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
@@ -4706,14 +4693,8 @@
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　ありえないありえない！！",
-		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　こんな滅茶苦茶な大喧嘩は…絶対にありえないッ！！",
+	OutputLine(NULL, "　ありえないありえない！！　こんな滅茶苦茶な大喧嘩は…絶対にありえないッ！！",
 		   NULL, "C'était une situation normalement impossible !", Line_Normal);
 	ClearMessage();
 
@@ -6318,10 +6299,8 @@
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　……死んでも。",
-		   NULL, "Et même après être mort !", Line_WaitForInput);
-	OutputLine(NULL, "死んだあとも！",
-		   NULL, " A REMOVE", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "　……死んでも。死んだあとも！",
+		   NULL, "Et même après être mort !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
