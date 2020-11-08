@@ -232,7 +232,7 @@
 
 	DrawSceneWithMask( "background/Ma_S1", "maskleft", 1, 0, 300 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>圭一の父</color>", NULL, "<color=#f5e6d3>Keiichi's dad</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>圭一の父</color>", NULL, "<color=#f5e6d3>Papa de Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s09/00/172600001", 256, TRUE);
 	OutputLine(NULL, "「大体、日本の電話料金は高すぎるんだ。",
 		   NULL, "— De toute façon, je te l'ai déjà dit, le problème, c'est que l'abonnement de base est trop cher au Japon.", Line_WaitForInput);
@@ -241,13 +241,14 @@
 		   NULL, " C'est parce que l'État a le monopole exclusif, il peut se permettre de fixer les prix qu'il veut.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>圭一の母</color>", NULL, "<color=#f5e6d3>Maman de Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>圭一の母</color>", NULL, "<color=#f5e6d3>Maman de Keiichi</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s09/00/172700001", 256, TRUE);
 	OutputLine(NULL, "「でも民間企業ってのは営利団体なのよ？",
-		   NULL, "— Oui, mais si le téléphone se fait privatiser, cela veut dire que l'on passera d'un service rendu au public à un produit marketing, il y aura des endroits où tu paieras moins cher, je suis d'accord, mais dans les régions plus éloignées, au contraire, les prix vont encore augmenter.", Line_WaitForInput);
+		   NULL, "— Oui, mais si le téléphone se fait privatiser, cela veut dire que l'on passera d'un service rendu au public à un produit marketing, il y aura des endroits où tu paieras moins cher, je suis d'accord, mais dans les régions plus éloignées, au contraire, les prix vont encore augmenter.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>圭一の母</color>", NULL, "<color=#f5e6d3>Maman de Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s09/00/172700002", 256, TRUE);
 	OutputLine(NULL, "　慈善団体なわけじゃないんだし、全国一律のサービスを本当に維持できるわけ？」",
-		   NULL, " Tu penses vraiment qu'ils pourront garder, ou qu'ils voudront garder, d'ailleurs, un tarif unique pour tout le monde, sans discrimination ?", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Tu penses vraiment qu'ils pourront garder, ou qu'ils voudront garder, d'ailleurs, un tarif unique pour tout le monde, sans discrimination ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -262,7 +263,7 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　民営化されると何がどう良くなるのかお子様な俺にはさっぱりだ。",
 		   NULL, "Je ne vois absolument pas en quoi ça améliorerait les choses -- pour la bonne et simple raison que je suis très jeune et que je ne suis pas sûr de comprendre ce qu'une privatisation veut dire au juste. Et puis, j'ai autre chose à penser dans ma vie...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -320,7 +321,7 @@
 		   NULL, " D'ailleurs, je vais sortir, donc pas la peine de préparer de repas de midi pour moi non plus.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>圭一の父</color>", NULL, "<color=#f5e6d3>Keiichi's dad</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>圭一の父</color>", NULL, "<color=#f5e6d3>Papa de Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s09/00/172600003", 256, TRUE);
 	OutputLine(NULL, "「なんだ、友達と一緒か？",
 		   NULL, "— Ah oui ? Tu pars avec des amis ?", Line_WaitForInput);

@@ -26,8 +26,7 @@
 
 	PlaySE( 0, "s_page", 56, 64 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-4>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　メンタルケアの第一歩として、相手の話を充分に聞き、頭ごなしに否定しないことは初歩の初歩でありますが、特に家族の場合、これによって感応してしまうことが少なくありません。",
 		   NULL, "La première chose à faire pour soigner un malade, c'est de lui parler, encore et encore, et de ne surtout pas le brusquer -- en réfutant sa vision des choses, par exemple. C'est vraiment un principe de base, mais dans le cadre familial, cela peut avoir un effet pervers et provoquer une transmission des symptômes psychotiques à un proche.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -54,7 +53,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　しかも今回のケースでは、共有される妄想の内容が非常に過激であるため、",
 		   NULL, "Le pire dans le cas qui nous intéresse est la nature extrêmement violente des hallucinations partagées entre la patiente et son père. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "最悪の場合、寄生虫の治療と称して、感応者同士が異常な方法で相互を傷付けあい死に至らしめる、もしくは悲観して心中するなどの行為に走ることも考えられます。",
 		   NULL, "Dans le pire des cas, on peut imaginer qu'ils se mutileraient l'un l'autre pour “essayer de se soigner”. Cela pourrait d'ailleurs amener l'un, l'autre, voire les deux à une mort certaine. Je n'ai, je pense, pas besoin de vous rappeler les cas de suicides collectifs.", Line_Normal);
 	ClearMessage();

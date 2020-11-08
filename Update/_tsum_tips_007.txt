@@ -31,7 +31,7 @@
 		   NULL, "Cette année, nous remettrons en vente les mascottes sculptées sur bois qui avaient eu tellement de succès l'année dernière.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　保護者の同伴があればお子様にも道具をお貸しできますので、どうか親子の素敵な記念にされてはいかがでしょうか。",
 		   NULL, "Les enfants peuvent s'y essayer aussi, à condition toutefois d'être accompagnés par au moins l'un de leurs parents -- cela peut se révéler être une occasion unique, dont vous vous souviendrez tous les deux pendant longtemps !", Line_Normal);
 	ClearMessage();
@@ -44,7 +44,7 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　この伐採は、老齢木や枯木を伐採することにより山林の美観を守り、新たに植樹を行なうことで山林の若返りを目的とするものです。",
 		   NULL, "Cette opération nous permettra d'enlever certains troncs morts, quelques très vieux arbres gênants, et autres bois secs pouvant représenter des risques en cas d'incendie. Elle donnera aussi un “coup de jeune” aux arbres de la forêt.", Line_Normal);
 	ClearMessage();

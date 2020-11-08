@@ -261,7 +261,7 @@
 		   NULL, " Il y a une chose que j'aimerais mettre au clair avec vous.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　全体に向けて言ったことだろうが、みんなの中心にいた俺を見ながら言ったので、…俺は代表する意味で頷き返して見せた。",
 		   NULL, "J'imaginais bien qu'elle disait cela pour tout le monde, mais j'étais debout au milieu du groupe et Rena me dévisageait, aussi, un peu par procuration pour tous les autres, j'acquiesçai fermement, lui signalant que nous étions tous toute ouïe.", Line_Normal);
 	ClearMessage();
@@ -307,13 +307,14 @@
 		   NULL, "— C'est l'une des raisons", Line_Continue);
 	Wait( 1200 );
 	OutputLine(NULL, "魅ぃちゃんの部活って好きなの。",
-		   NULL, " pour lesquelles moi, en tout cas, j'adore les jeux du club.", Line_WaitForInput);
+		   NULL, " pour lesquelles moi, en tout cas, j'adore les jeux du club.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/440100005", 256, TRUE);
 	OutputLine(NULL, "……ほら、優勝のためには何でもしようって考え方、",
-		   NULL, " Tu sais, Mii, tu as instauré cette règle comme quoi tous les coups sont permis pour gagner.", Line_Continue);
+		   NULL, "Tu sais, Mii, tu as instauré cette règle comme quoi tous les coups sont permis pour gagner.", Line_Continue);
 	OutputLine(NULL, "…そういうのって、素敵だと思う。",
 		   NULL, " Et ça, j'adore, je trouve cette règle franchement formidable. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", "<size=-4>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/440100006", 256, TRUE);
 	OutputLine(NULL, "…だって、世の中が綺麗事だけで縛られてて、やっていい努力がわずかだけに決められていたら、……幸せじゃない人たちは、ますます幸せを勝ち取れなくなっちゃうじゃない？",
 		   NULL, "Parce que dans la vraie vie, ou en tout cas dans la société, il faut toujours sauver les apparences, il faut être gentil, il ne faut surtout pas brusquer les gens. Sauf qu'à cause de ça, les gens qui ne sont pas heureux dans leur vie n'ont pas vraiment la possibilité de faire changer les choses, tu ne crois pas ?", Line_Normal);
@@ -325,13 +326,15 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/440100007", 256, TRUE);
 	OutputLine(NULL, "　不幸ってね、連鎖するものだと思うの。",
-		   NULL, "La malchance, ou disons être malheureux ou poisseux, eh bien, c'est un peu une chaîne.", Line_WaitForInput);
+		   NULL, "La malchance, ou disons être malheureux ou poisseux, eh bien, c'est un peu une chaîne.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/440100008", 256, TRUE);
 	OutputLine(NULL, "一度続き始めると、なかなか抜け出せない。",
-		   NULL, " Une chose qui va mal va en entraîner une autre, puis une autre, puis en déclencher encore une, et soudain, vous êtes dans le pétrin et vous ne pouvez plus y échapper.", Line_WaitForInput);
+		   NULL, "Une chose qui va mal va en entraîner une autre, puis une autre, puis en déclencher encore une, et soudain, vous êtes dans le pétrin et vous ne pouvez plus y échapper.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/440100009", 256, TRUE);
 	OutputLine(NULL, "そこから抜け出すには、運とか人の助けとか、そういう他力本願なものだけじゃ到底足りない。",
-		   NULL, " Pour se sortir de ce genre de mauvais pas, on ne peut pas simplement attendre que la chance tourne ou que les autres vous aident.", Line_Normal);
+		   NULL, "Pour se sortir de ce genre de mauvais pas, on ne peut pas simplement attendre que la chance tourne ou que les autres vous aident.", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -340,13 +343,15 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/440100010", 256, TRUE);
 	OutputLine(NULL, "自分でももっともっと努力しないといけないと思うの。",
-		   NULL, " Il faut se bouger, il faut se démener.", Line_WaitForInput);
+		   NULL, " Il faut se bouger, il faut se démener.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/440100011", 256, TRUE);
 	OutputLine(NULL, "それも、本当の本当に精一杯。",
-		   NULL, " Et pas qu'un peu, il faut donner tout ce que vous avez dans les tripes.", Line_WaitForInput);
+		   NULL, "Et pas qu'un peu, il faut donner tout ce que vous avez dans les tripes.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/440100012", 256, TRUE);
 	OutputLine(NULL, "そこまでして、やっと掴めるのが、……幸せってものじゃないかなって。」",
-		   NULL, " Et c'est seulement quand vous avez tout donné, quand vous avez tendu la main en avant, en surextension, que, du bout des doigts, vous arrivez à saisir la chance et à attraper votre bonheur.", Line_Normal);
+		   NULL, "Et c'est seulement quand vous avez tout donné, quand vous avez tendu la main en avant, en surextension, que, du bout des doigts, vous arrivez à saisir la chance et à attraper votre bonheur.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -433,7 +438,7 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　同情という名のマスクを被って、舞台の上のピエロを眺めて楽しんでいるだけの他人事な俺たちへの、たった一つだけの反撃。",
 		   NULL, "Nous étions des spectateurs, cachés derrière nos masques de compassion, mais nous la regardions elle, figure comique, clown, mime, sur scène, en nous marrant intérieurement. C'était la seule chose qu'elle pouvait faire contre nous.", Line_Normal);
 	ClearMessage();

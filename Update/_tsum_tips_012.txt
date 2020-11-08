@@ -140,7 +140,7 @@
 		   NULL, "Alors, oui, c'est vrai qu'ici, il n'y a rien. Ce n'est franchement pas pratique comparé à la vie en ville.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　でも、……父さんなぁ、家族でもう一度生活をやり直すならここしかないって思ったんだ。",
 		   NULL, "Mais tu sais... J'y ai beaucoup réfléchi à l'époque, et quand j'ai voulu recommencer à zéro avec vous, pour repartir sur des bases fraîches, la première chose que j'ai vu dans mon esprit, c'est ce champ de fleurs sauvages.", Line_Normal);
 	ClearMessage();
@@ -231,9 +231,10 @@
 	OutputLine(NULL, "　と、とにかく芸術的な興味でだよ。",
 		   NULL, " Enfin, tu vois, quoi, je suis un artiste, il me faut quelque chose pour m'inspirer.", Line_WaitForInput);
 	OutputLine(NULL, "見かけたら父さんにも教えてくれよ。",
-		   NULL, " Si tu les rencontres un jour, n'oublie pas de me prévenir.", Line_WaitForInput);
+		   NULL, " Si tu les rencontres un jour, n'oublie pas de me prévenir.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "きっとだぞー！",
-		   NULL, " Tu me le promets, hein ?", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Tu me le promets, hein ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();

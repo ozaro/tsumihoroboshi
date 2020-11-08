@@ -569,9 +569,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ウェイトレスは今日はイベントデーなので、チケットがないと入店できないと説明しているのだが、",
-		   NULL, "La serveuse était en train d'expliquer que l'on ne pouvait pas entrer sans ticket, à cause de la journée spéciale.", Line_WaitForInput);
+		   NULL, "La serveuse était en train d'expliquer que l'on ne pouvait pas entrer sans ticket, à cause de la journée spéciale.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "女性は、そんなこと一言も聞いていないの一点張りでごり押ししようとしていた。",
-		   NULL, " Mais la femme ne voulait apparemment rien savoir, faisant valoir que ça n'était marqué nulle part et qu'elle ne pouvait pas le deviner.", Line_Normal);
+		   NULL, "Mais la femme ne voulait apparemment rien savoir, faisant valoir que ça n'était marqué nulle part et qu'elle ne pouvait pas le deviner.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }

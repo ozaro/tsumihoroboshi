@@ -248,10 +248,11 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s09/01/170101129", 256, TRUE);
 	OutputLine(NULL, "「……何て言うのかな、…雛見沢村連続怪死事件というものが、存在しているという辺りについて妄信しているというか。",
-		   NULL, "— Comment dire... Il est persuadé que les meurtres des dernières années sont tous liés entre eux.", Line_WaitForInput);
+		   NULL, "— Comment dire... Il est persuadé que les meurtres des dernières années sont tous liés entre eux.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s09/01/170101130", 256, TRUE);
 	OutputLine(NULL, "………現に５年連続で起こってるのにこんなことを言うのもなんだけど。",
-		   NULL, " Je veux dire, ils ont eu lieu l'un après l'autre, donc techniquement, c'est bel et bien une série de meurtres, mais pas forcément des meurtres en série, tu vois ce que je veux dire ? ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Je veux dire, ils ont eu lieu l'un après l'autre, donc techniquement, c'est bel et bien une série de meurtres, mais pas forcément des meurtres en série, tu vois ce que je veux dire ? ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s09/01/170101131", 256, TRUE);
 	OutputLine(NULL, "……俺さ、…もともと連続事件なんて存在しないんじゃないかって思ってる。」",
@@ -296,9 +297,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　鷹野さんのスクラップ帖はまさにそれで、近年の事件や過去の残酷な歴史をオカルト風味に脚色して、",
-		   NULL, "Madame Takano s'est un peu servie de ça aussi. En réécrivant les événements des dernières années sous l'angle de la fiction,", Line_WaitForInput);
+		   NULL, "Madame Takano s'est un peu servie de ça aussi. En réécrivant les événements des dernières années sous l'angle de la fiction,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "もっともらしい嘘をでっち上げ、園崎家が黒幕であるかのような幻想を作り出す。",
-		   NULL, " elle pouvait raconter les bobards les plus énormes en leur donnant un fond de vérité, et se servir de la réputation du clan des Sonozaki pour tout leur mettre sur le dos.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "elle pouvait raconter les bobards les plus énormes en leur donnant un fond de vérité, et se servir de la réputation du clan des Sonozaki pour tout leur mettre sur le dos.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -466,13 +468,13 @@
 		   NULL, "Mais les enfants voulaient s'amuser jusqu'à la dernière seconde, et ils couraient un peu partout dans la salle.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>女子</color>", NULL, "<color=#f5e6d3>Girl</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>女子</color>", NULL, "<color=#f5e6d3>Fille</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s09/00/girla17001", 256, TRUE);
 	OutputLine(NULL, "「ねーー、今日はくさいーーー、窓しめてー。」",
 		   NULL, "— Eh, ça pue aujourd'hui, vous trouvez pas ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>少年</color>", NULL, "<color=#f5e6d3>Young boy</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>少年</color>", NULL, "<color=#f5e6d3>Garçon</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s09/00/boya17001", 256, TRUE);
 	OutputLine(NULL, "「ばぁか、窓を閉めたらもっと暑くなるんだよー！！」",
 		   NULL, "— Mais ferme pas les fenêtres, t'es folle ou quoi ? Il fera encore plus chaud !", Line_Normal);
@@ -573,7 +575,7 @@
 		   NULL, " Je ne saisis pas exactement l'humour de la situation, mais soyez sans crainte, vous devrez en prendre d'abord devant moi, mes chers !", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>少年</color>", NULL, "<color=#f5e6d3>Young boy</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>少年</color>", NULL, "<color=#f5e6d3>Garçon</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s09/00/boyb17001", 256, TRUE);
 	OutputLine(NULL, "「あれーーー？！",
 		   NULL, "— Eh, mais ?", Line_WaitForInput);
@@ -934,13 +936,15 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 4, "ps3/s09/04/170400153", 256, TRUE);
 	OutputLine(NULL, "「先ほどから、何だか物騒な話でございますけど。",
-		   NULL, "— Dites-moi, vous parlez de choses bien terribles depuis tout à l'heure.", Line_WaitForInput);
+		   NULL, "— Dites-moi, vous parlez de choses bien terribles depuis tout à l'heure.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 4, "ps3/s09/04/170400154", 256, TRUE);
 	OutputLine(NULL, "……本当にレナさんがそんな恐ろしいことをなさいますの…？",
-		   NULL, " Mais êtes-vous réellement sûrs que cette chère Rena pourrait en arriver à ces extrémités ?", Line_WaitForInput);
+		   NULL, "Mais êtes-vous réellement sûrs que cette chère Rena pourrait en arriver à ces extrémités ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 4, "ps3/s09/04/170400155", 256, TRUE);
 	OutputLine(NULL, "　診療所を襲うなんて、信じられませんわ。」",
-		   NULL, " Il me paraît peu concevable qu'elle veuille attaquer la clinique Irie !", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Il me paraît peu concevable qu'elle veuille attaquer la clinique Irie !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }

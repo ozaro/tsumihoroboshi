@@ -412,10 +412,11 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100089", 256, TRUE);
 	OutputLine(NULL, "「しっかし……、圧巻な光景だなぁ。",
-		   NULL, "— Je vais vous dire, c'est un peu bizarre de voir tout ça.", Line_WaitForInput);
+		   NULL, "— Je vais vous dire, c'est un peu bizarre de voir tout ça.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100090", 256, TRUE);
 	OutputLine(NULL, "勝ってよかったと同時に、負けてたらその一角に俺がいたかもしれないことを思うととても笑えん。」",
-		   NULL, " D'un côté, je suis très content d'avoir gagné, et de l'autre, j'ai vraiment peur en me disant qu'encore un peu et je me retrouvais avec vous. Et quand je pense à ce que je pourrais porter, ça donne vraiment pas envie de rire...", GetGlobalFlag(GLinemodeSp));
+		   NULL, "D'un côté, je suis très content d'avoir gagné, et de l'autre, j'ai vraiment peur en me disant qu'encore un peu et je me retrouvais avec vous. Et quand je pense à ce que je pourrais porter, ça donne vraiment pas envie de rire...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();

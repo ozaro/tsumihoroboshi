@@ -33,20 +33,23 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>店員</color>", NULL, "<color=#f5e6d3>Vendeur</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s09/00/regia17001", 256, TRUE);
 	OutputLine(NULL, "「竜宮さま、大変申し訳ございません。",
-		   NULL, "— Madame Ryûgû, je suis extrêêêmement désolé,", Line_WaitForInput);
+		   NULL, "— Madame Ryûgû, je suis extrêêêmement désolé,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>店員</color>", NULL, "<color=#f5e6d3>Vendeur</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s09/00/regia17002", 256, TRUE);
 	OutputLine(NULL, "実は入荷のトラックが高速で事故渋滞に巻き込まれているようでございまして…。",
-		   NULL, " mais voyez-vous, le camion qui devait nous livrer est bloqué en ce moment sur l'autoroute, pris dans l'embouteillage causé par un accident.", Line_WaitForInput);
+		   NULL, "mais voyez-vous, le camion qui devait nous livrer est bloqué en ce moment sur l'autoroute, pris dans l'embouteillage causé par un accident.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>店員</color>", NULL, "<color=#f5e6d3>Vendeur</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s09/00/regia17003", 256, TRUE);
 	OutputLine(NULL, "おそらくはもうじき到着すると思うのですが…。」",
-		   NULL, " Mais je suis sûr qu'il va bientôt arriver, ne vous en faites pas...", Line_Normal);
+		   NULL, "Mais je suis sûr qu'il va bientôt arriver, ne vous en faites pas...", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　先ほど、どこそこのインターを降りたとの連絡があったので、あと１時間くらいで来るとか何とか。",
-		   NULL, "Il lui fallut bien cinq minutes pour me dire qu'en fait, il avait pris une sortie d'autoroute et faisait le reste du chemin par les petites nationales, et qu'il arriverait dans une heure.", Line_WaitForInput);
+		   NULL, "Il lui fallut bien cinq minutes pour me dire qu'en fait, il avait pris une sortie d'autoroute et faisait le reste du chemin par les petites nationales, et qu'il arriverait dans une heure.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "書けばそれだけで済むことを、やたら回りくどく説明してくれた。",
-		   NULL, " Ce n'était pourtant pas la fin du monde ?", Line_Normal);
+		   NULL, "Ce n'était pourtant pas la fin du monde ?", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -127,7 +130,7 @@
 		   NULL, "L'intérieur ne donnait pas cette impression d'un salon mondain dans lequel les clients dégusteraient un bon café. C'était plutôt le genre de tripots dans lesquels les loubards s'entassaient.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　雰囲気も馴染めたものじゃないし、そして何よりも、一番奥のシートから聞こえてくる男女２人の黄色い笑い声がとても不快だった。",
 		   NULL, "Rena n'était franchement pas habituée à ce genre d'endroits, et puis surtout, il y avait ce couple qui rigolait fort -- et surtout bizarrement -- installé sur la banquette au fond du café, contre le mur. C'était particulièrement énervant.", Line_Normal);
 	ClearMessage();
@@ -961,16 +964,19 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#cd74a7>リナ</color>", NULL, "<color=#cd74a7>Rina</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 20, "ps2/20/172100070", 540, TRUE);
 	OutputLine(NULL, "「私にだいぶお熱みたいだからねぇ。",
-		   NULL, "— Hmmm, je sais pas trop, il est plutôt raide dingue de moi, tu sais.", Line_WaitForInput);
+		   NULL, "— Hmmm, je sais pas trop, il est plutôt raide dingue de moi, tu sais.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#cd74a7>リナ</color>", NULL, "<color=#cd74a7>Rina</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 20, "ps2/20/172100071", 540, TRUE);
 	OutputLine(NULL, "だって、私が言えば何でも買うのよ、何でも！",
-		   NULL, " Il m'achète absolument tout, j'ai juste à dire “je veux ça” et c'est bon !", Line_WaitForInput);
+		   NULL, "Il m'achète absolument tout, j'ai juste à dire “je veux ça” et c'est bon !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#cd74a7>リナ</color>", NULL, "<color=#cd74a7>Rina</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 20, "ps2/20/172100072", 540, TRUE);
 	OutputLine(NULL, "　あんたみたいなドケチとは大違いよね〜。",
-		   NULL, " C'est pas comme un certain que je connais, il est pas radin !", Line_WaitForInput);
+		   NULL, "C'est pas comme un certain que je connais, il est pas radin !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#cd74a7>リナ</color>", NULL, "<color=#cd74a7>Rina</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 20, "ps2/20/172100073", 540, TRUE);
 	OutputLine(NULL, "私も本気になっちゃおうかしらぁん。」",
-		   NULL, " Je devrais peut-être penser à lui plus sérieusement...", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Je devrais peut-être penser à lui plus sérieusement...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ddc16b>鉄平</color>", NULL, "<color=#ddc16b>Teppei</color>", NULL, Line_ContinueAfterTyping); }
@@ -1167,9 +1173,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　先ほどの男たちと比べれば物静かな雰囲気だが、彼らに道を譲らせるほどなのだから、恐ろしい相手に違いない。",
-		   NULL, "Il avait l'air beaucoup plus calme et posé que les autres petits poissons, mais si les deux étaient partis la peur au ventre, c'est qu'il n'était vraiment pas commode.", Line_WaitForInput);
+		   NULL, "Il avait l'air beaucoup plus calme et posé que les autres petits poissons, mais si les deux étaient partis la peur au ventre, c'est qu'il n'était vraiment pas commode.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "……誰もがそう思い、この新しい客に目を合わせないようにしていた。",
-		   NULL, " D'ailleurs, personne dans le bar ne chercha à croiser son regard.", Line_Normal);
+		   NULL, "D'ailleurs, personne dans le bar ne chercha à croiser son regard.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1684,7 +1691,6 @@
 		   NULL, " c'est une arnaque au mariage, à la base. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s09/06/170600048", 256, TRUE);
-	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
 	OutputLine(NULL, "　ようするに、カモと女をくっつけて、いい感じになったところで男が乱入して、俺の女に何しやがるーって、金を巻き上げる古典的恐喝です。」",
 		   NULL, "Elle se trouve un bon pigeon, elle le chauffe à blanc, et quand il lui est tombé tout cuit -- si j'ose dire -- son homme débarque et la récupère, avec une grosse somme à la clef.", Line_Normal);
 	ClearMessage();
@@ -1741,13 +1747,15 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s09/06/170600053", 256, TRUE);
 	OutputLine(NULL, "「ほーーー。",
-		   NULL, "— Ah oui ?", Line_WaitForInput);
+		   NULL, "— Ah oui ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s09/06/170600054", 256, TRUE);
 	OutputLine(NULL, "何それ、葛西をころっと騙した女って誰ーー？",
-		   NULL, " Mais dis-moi, tu m'as l'air très au courant, tu as eu une expérience concrète d'où tu tires toute cette sagesse ? C'était qui ?", Line_WaitForInput);
+		   NULL, "Mais dis-moi, tu m'as l'air très au courant, tu as eu une expérience concrète d'où tu tires toute cette sagesse ? C'était qui ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s09/06/170600055", 256, TRUE);
 	OutputLine(NULL, "　マスター、デザートは私と葛西と、あとレナさんで、",
-		   NULL, " Ah, patron, mettez un dessert pour moi, Kasai et pour Rena.", Line_Continue);
+		   NULL, "Ah, patron, mettez un dessert pour moi, Kasai et pour Rena.", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1800 );
 	// (backup) SetValidityOfInput( TRUE );

@@ -43,7 +43,7 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　近年、特に未成年者に多い短絡的な問題解決手段に、「殺人」と「自殺」の２つがあります。",
 		   NULL, "Ces dernières années, et c'est visible en particulier dans certaines affaires impliquant des mineurs, on voit assez souvent émerger des débats au tribunal l'idée du meurtre et du suicide comme solutions-miracle à une situation problématique.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -75,7 +75,7 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　また、クラスを変わる、学校を辞めるなどということは、なかなかできることではなく「逃れる」ことも普通はできません。",
 		   NULL, "De plus, s'enfuir de l'école est assez difficile à faire. Prise au pied de la lettre, la solution est impossible. Quant à demander le changement de classe ou le transfert dans une autre école, ce n'est pas facile à mettre en place.", Line_Normal);
 	ClearMessage();
@@ -156,9 +156,10 @@
 	OutputLine(NULL, "　平成はいい世の中になりました。",
 		   NULL, "Nous sommes à l'ère Heisei, la société est devenue bien pratique.", Line_WaitForInput);
 	OutputLine(NULL, "そういう悩みを訴えるホットラインは各自治体にいくつも設けられており、",
-		   NULL, " Il y a plusieurs instituts et autres organismes pour vous aider, il y en a partout.", Line_WaitForInput);
+		   NULL, " Il y a plusieurs instituts et autres organismes pour vous aider, il y en a partout.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "例えあなたが友人も親も持たなかったとしても、訴える先はいくらでも用意してあるのです。",
-		   NULL, " Si par exemple vous n'avez pas d'amis, ou si vous êtes orphelin, eh bien je vous assure qu'il reste encore des tas de gens qui sont là, à votre écoute.", Line_Normal);
+		   NULL, "Si par exemple vous n'avez pas d'amis, ou si vous êtes orphelin, eh bien je vous assure qu'il reste encore des tas de gens qui sont là, à votre écoute.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -183,7 +184,7 @@
 		   NULL, "Ce n'est pas un métier facile, et il est particulièrement ingrat. Croyez-moi, un escroc ne ferait pas ça gratuitement !", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　もしあなたが、相手を「殺す」か、自分を「殺す」しかもう選択肢が残されていないと思ったなら、どうか最後にこういうところへ電話してみてください。",
 		   NULL, "Si vous vous retrouvez un jour dans cette situation, où vous devez choisir entre tuer votre ennemi ou vous tuer vous-même, alors, en dernier recours, pensez à appeler un centre SOS trucmuche -- vous n'avez plus rien à perdre, de toute façon.", Line_Normal);
 	ClearMessage();

@@ -1704,7 +1704,7 @@
 
 	DrawSceneWithMask( "background/si_h2", "maskdown", 1, 0, 300 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　チャンネルが壊れて抜けてしまったため、ペンチで摘んでチャンネルを変えていたボロテレビは、最新の大画面テレビに変わっていた。",
 		   NULL, "Notre vieille télévision -- tellement usée qu'il fallait changer la chaîne en introduisant une pince à bec dans le panneau latéral parce que tous les boutons étaient cassés -- avait été remplacée par un modèle énorme et dernier cri.", Line_Normal);
 	ClearMessage();
@@ -1745,9 +1745,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　でも、欝になっていたお父さんはそんなことに興味は示さなかったし、",
-		   NULL, "Mais il n'avait pas daigné y songer ; ça ne l'intéressait pas.", Line_WaitForInput);
+		   NULL, "Mais il n'avait pas daigné y songer ; ça ne l'intéressait pas.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…ああいう破局を迎えても、心のどこかでまだ踏ん切りがついていないらしくて、かつて母と共に選んだのだろう、古い家具を捨てるのを嫌っていた。",
-		   NULL, " J'imagine que malgré l'issue désastreuse de son mariage, il n'arrivait pas à se séparer de ma mère. C'était pour ça qu'il ne se décidait pas à jeter les anciens meubles -- il les avait sûrement choisis avec elle à l'époque.", Line_Normal);
+		   NULL, "J'imagine que malgré l'issue désastreuse de son mariage, il n'arrivait pas à se séparer de ma mère. C'était pour ça qu'il ne se décidait pas à jeter les anciens meubles -- il les avait sûrement choisis avec elle à l'époque.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2102,9 +2103,10 @@
 	OutputLine(NULL, "お父さんを元気にしてくれてありがとうって感謝しなくちゃ。",
 		   NULL, " Dis-lui merci, c'est grâce à elle que Papa va mieux.", Line_WaitForInput);
 	OutputLine(NULL, "リナさんだって、私を追い出そうとしてなんかいない。",
-		   NULL, " Et elle n'est pas en train d'essayer de me jeter dehors.", Line_WaitForInput);
+		   NULL, " Et elle n'est pas en train d'essayer de me jeter dehors.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "むしろ仲良くしようとがんばってくれてると思う。",
-		   NULL, " C'est même le contraire, elle fait tout pour être agréable. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "C'est même le contraire, elle fait tout pour être agréable. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "それを私がいつまでも懐かず、逃げているだけなのだ。",
 		   NULL, "C'est moi suis en tort ici, je ne fais que m'enfuir.", Line_Normal);
@@ -2188,13 +2190,15 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>レナの父</color>", NULL, "<color=#f5e6d3>Papa de Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s09/00/172900016", 256, TRUE);
 	OutputLine(NULL, "「お父さんな、ジャケットを２着ほど洋服屋さんに取り寄せさせてるんだ。",
-		   NULL, "— En fait, j'ai commandé deux vestes à un magasin à Okinomiya.", Line_WaitForInput);
+		   NULL, "— En fait, j'ai commandé deux vestes à un magasin à Okinomiya.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>レナの父</color>", NULL, "<color=#f5e6d3>Papa de Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s09/00/172900017", 256, TRUE);
 	OutputLine(NULL, "それがな、今日届くらしいんだ。",
-		   NULL, " Apparemment, elles sont arrivées aujourd'hui.", Line_WaitForInput);
+		   NULL, "Apparemment, elles sont arrivées aujourd'hui.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>レナの父</color>", NULL, "<color=#f5e6d3>Papa de Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s09/00/172900018", 256, TRUE);
 	OutputLine(NULL, "ちょっとお父さんは回収業者さんを手伝わなきゃならないから、礼奈が代わりに取ってきてくれないか？」",
-		   NULL, " Je dois aider les déménageurs à récupérer nos vieux meubles, donc je ne peux pas bouger d'ici, tu veux bien y aller à ma place ?", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Je dois aider les déménageurs à récupérer nos vieux meubles, donc je ne peux pas bouger d'ici, tu veux bien y aller à ma place ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }

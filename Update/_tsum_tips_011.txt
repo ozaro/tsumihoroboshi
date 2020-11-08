@@ -114,12 +114,13 @@
 	Wait( 600 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "………過去において世界で何度か捕獲の例があるはずなのに、",
-		   NULL, " et malgré les plusieurs spécimens capturés de par le monde,", Line_ContinueAfterTyping);
+		   NULL, " et malgré les plusieurs spécimens capturés de par le monde,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	SetValidityOfInput( FALSE );
 	Wait( 600 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……みな、溶けたりして消えてしまい、跡形も残さない。",
-		   NULL, " ils disparaissaient toujours sans laisser de traces, comme s'ils se liquéfiaient pour s'évaporer...", GetGlobalFlag(GLinemodeSp));
+		   NULL, "ils disparaissaient toujours sans laisser de traces, comme s'ils se liquéfiaient pour s'évaporer...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 

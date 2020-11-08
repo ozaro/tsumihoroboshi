@@ -240,10 +240,11 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a17d6b>富田</color>", NULL, "<color=#a17d6b>Tomita</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 24, "ps3/s09/24/172400005", 256, TRUE);
 	OutputLine(NULL, "ご存知のとおり、エンジェルモートの制服は成熟した女性の魅力を全面に押し出すことを最大の目的にした衣装です。",
-		   NULL, "Comme vous le savez tous, mes chers confrères, l'uniforme de l'Angel Mort a été conçu pour renforcer le charme naturel des jeunes femmes en pleine santé.", Line_WaitForInput);
+		   NULL, "Comme vous le savez tous, mes chers confrères, l'uniforme de l'Angel Mort a été conçu pour renforcer le charme naturel des jeunes femmes en pleine santé.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a17d6b>富田</color>", NULL, "<color=#a17d6b>Tomita</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 24, "ps3/s09/24/172400006", 256, TRUE);
 	OutputLine(NULL, "よって、着衣には多少の成熟した年齢相応のプロポーションが必要とされます。",
-		   NULL, " Il présuppose donc que la serveuse qui va le porter possède certaines formes dues à une certaine maturité physique.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Il présuppose donc que la serveuse qui va le porter possède certaines formes dues à une certaine maturité physique.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	PlaySE( 0, "wa_011", 56, 64 );
@@ -275,7 +276,7 @@
 	Wait( 200 );
 	// (backup) SetValidityOfInput( TRUE );
 	PlaySE( 0, "s_furu", 56, 64 );
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#7a7e7d>岡村</color>", NULL, "<color=#7a7e7d>Okamura</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#7a7e7d>岡村</color>", NULL, "<color=#7a7e7d>Okamura</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 25, "ps3/s09/25/172500003", 256, TRUE);
 	OutputLine(NULL, "　そこで古手さんはプール用の水着で衣装を代用したのですが、それにより神をも予見できなかったであろう、",
 		   NULL, "C'est la raison pour laquelle elle fut contrainte, à cause des couleurs, de porter son maillot de bain réglementaire. Et là, à la grande surprise des dieux, ce fut le drame !", Line_Continue);
@@ -295,7 +296,7 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "", Line_ContinueAfterTyping); }
 
 	SetSpeedOfMessage( TRUE, 128 );
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#7a7e7d>岡村</color>", NULL, "<color=#7a7e7d>Okamura</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#7a7e7d>岡村</color>", NULL, "<color=#7a7e7d>Okamura</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 25, "ps3/s09/25/172500005", 256, TRUE);
 	OutputLine(NULL, "　属性付与、",
 		   NULL, "Elle a un bonus sur tous les éléments,", Line_Continue);
@@ -650,26 +651,29 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5a5e5e>亀田</color>", NULL, "<color=#5a5e5e>Kameda</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 23, "ps3/s09/23/172800005", 256, TRUE);
 	OutputLine(NULL, "「なななな！！",
-		   NULL, "— Qui-que-quoi-dont-où-comment ?", Line_WaitForInput);
+		   NULL, "— Qui-que-quoi-dont-où-comment ?", GetGlobalFlag(GLinemodeSp));
 
 	SetSpeedOfMessage( TRUE, 128 );
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5a5e5e>亀田</color>", NULL, "<color=#5a5e5e>Kameda</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 23, "ps3/s09/23/172800006", 256, TRUE);
 	OutputLine(NULL, "　どど、どういうことっすかＫぇぇぇえぇい！！！",
-		   NULL, " Qu'est-ce que cela signifie, K !", Line_WaitForInput);
+		   NULL, "Qu'est-ce que cela signifie, K !", GetGlobalFlag(GLinemodeSp));
 
 	PlaySE( 0, "s_daidageki", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, FALSE );
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5a5e5e>亀田</color>", NULL, "<color=#5a5e5e>Kameda</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 23, "ps3/s09/23/172800007", 256, TRUE);
 	OutputLine(NULL, "　二人で同じ器の巨大パフェを突っつきあった仲じゃないっすかあぁあ！！",
-		   NULL, " Après le Giga-Parfait que nous avons mangé ensemble l'autre jour, je croyais que nous étions amis, pourtant !", Line_WaitForInput);
+		   NULL, "Après le Giga-Parfait que nous avons mangé ensemble l'autre jour, je croyais que nous étions amis, pourtant !", GetGlobalFlag(GLinemodeSp));
 
 	PlaySE( 0, "wa_007", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 0, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 0, 4*2, FALSE );
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5a5e5e>亀田</color>", NULL, "<color=#5a5e5e>Kameda</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 23, "ps3/s09/23/172800008", 256, TRUE);
 	OutputLine(NULL, "　それなのに俺に内緒でそんな素敵な部活をしてたなんてーーッ！！！",
-		   NULL, " Comment as-tu pu me cacher l'existence de ce club !? ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Comment as-tu pu me cacher l'existence de ce club !? ", GetGlobalFlag(GLinemodeSp));
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5a5e5e>亀田</color>", NULL, "<color=#5a5e5e>Kameda</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 23, "ps3/s09/23/172800009", 256, TRUE);
@@ -811,7 +815,7 @@
 
 	OutputLine(NULL, "全て剥いてしまえば単なるスポンジケーキに過ぎないんです！！",
 		   NULL, " À la base, c'est un bête morceau de génoise ! ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5a5e5e>亀田</color>", NULL, "<color=#5a5e5e>Kameda</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5a5e5e>亀田</color>", NULL, "<color=#5a5e5e>Kameda</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 23, "ps3/s09/23/172800014", 256, TRUE);
 	OutputLine(NULL, "　それをクリームで飾り、",
 		   NULL, "Mais si tu lui rajoutes de la crème,", Line_Continue);

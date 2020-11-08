@@ -646,7 +646,6 @@
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
 	OutputLine(NULL, "　私は知らなかったが、すでにもっと大きな会社に引き抜かれ、ますますに責任があり、才能を発揮できる立場になっていたのだ。",
 		   NULL, "Je ne le savais pas, mais elle avait en fait déjà changé d'entreprise, elle était dans une grande boîte, avec beaucoup de compétition et beaucoup de responsabilités.", Line_Normal);
 	ClearMessage();
@@ -1596,9 +1595,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ご近所の人たちは、亡くなった祖母の息子夫婦が離婚で戻ってきたことは理解していたが、",
-		   NULL, "Les voisins savaient en gros qui nous étions, mon père était le gendre de la vieille dame qui avait vécu ici, il était divorcé de sa femme, il revenait avec leur fille unique,", Line_WaitForInput);
+		   NULL, "Les voisins savaient en gros qui nous étions, mon père était le gendre de la vieille dame qui avait vécu ici, il était divorcé de sa femme, il revenait avec leur fille unique,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "だからといって私たちに面識があるわけではなく、無論、私にだって面識はなかった。",
-		   NULL, " mais nous n'avions pas plus de contacts que cela, et très franchement, je n'avais aucun souvenir d'eux non plus.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "mais nous n'avions pas plus de contacts que cela, et très franchement, je n'avais aucun souvenir d'eux non plus.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 

@@ -128,15 +128,13 @@
 
 	PlaySE( 0, "s_page", 56, 64 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　また、妄想の傾向にもよりますが、「被害妄想」から「追跡妄想」「陰謀妄想」に転じることもあり、結果、架空の敵を作り上げ反社会的な行為に踏み切ることもあります。",
 		   NULL, "De plus -- mais cela dépend en grande partie des délires cognitifs de chaque patient -- ils tendent à se créer un ennemi imaginaire à cause de leurs délires de persécutions, et leur schizophrénie les rend peu à peu asociaux, se tenant à l'écart des autres.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-4>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "（例えば、カルト教壇の教祖のパラノイアに集団感応した信者たちが、集団で「陰謀妄想」に転じ、自衛と称して反社会的な行為に踏み切ることは、まだ日本では報告例がありませんが、近い将来にありえるかもしれません）",
 		   NULL, "(Par extension, et même si le cas ne s'est encore jamais présenté au Japon, on peut tout à fait imaginer un groupe de personnes soudées autour d'une personnalité religieuse, dans une secte, qui seraient contaminées par sa schizophrénie, et qui, dans un pur mécanisme de défense, se mettraient à vivre ensemble, dans une communauté, à l'écart du reste des individus.) ", Line_Normal);
 	ClearMessage();
@@ -169,7 +167,7 @@
 
 	PlaySE( 0, "s_page", 56, 64 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　以上の理由から、郷里へ帰郷されるならば、その後も専門の医療機関で継続的な指導を受けられることを強く勧めていただきたいと思います。",
 		   NULL, "Pour toutes les raisons exposées ci-dessus, nous lui conseillons de repartir dans leur village d'origine, tout en continuant à consulter régulièrement un psychiatre, qui seul pourra constater l'évolution de la patiente dans le bon sens.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }

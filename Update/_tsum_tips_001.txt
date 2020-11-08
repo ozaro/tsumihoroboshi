@@ -115,7 +115,7 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　全体で見れば３６分の１の奇跡だけど、…１つ１つ積み立てて行こうと思えば、たったの６分の１程度の奇跡でしかないのだから。",
 		   NULL, "Ce serait un miracle d'une probabilité d'une chance sur trente-six... mais si je ne considère que le deuxième coup -- puisque le premier est déjà passé -- alors ce ne serait qu'un mirable d'une chance sur six. Pas vraiment un miracle, donc.", Line_Normal);
 	ClearMessage();

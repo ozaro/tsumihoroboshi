@@ -549,10 +549,11 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 4, "ps3/s09/04/170400111", 256, TRUE);
 	OutputLine(NULL, "「コツは、相手の質問内容からも何かのヒントを得ることですのよ。",
-		   NULL, "— Le petit plus qui fait la différence, c'est d'analyser les propositions des autres pour en tirer des conclusions quant à leurs propres cartes.", Line_WaitForInput);
+		   NULL, "— Le petit plus qui fait la différence, c'est d'analyser les propositions des autres pour en tirer des conclusions quant à leurs propres cartes.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 4, "ps3/s09/04/170400112", 256, TRUE);
 	OutputLine(NULL, "それが分かれば、時には相手の手番で答えが分かることもありましてよ！」",
-		   NULL, " Il arrive parfois de découvrir la solution pendant qu'un adversaire fait une proposition !", Line_Normal);
+		   NULL, "Il arrive parfois de découvrir la solution pendant qu'un adversaire fait une proposition !", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }

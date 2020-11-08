@@ -84,7 +84,7 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　改めて落胆も感じるが、同時に、リナを殺す以外に方法はなかったのだとも分かり、不思議と肩が軽くなる感じがした。",
 		   NULL, "Encore une fois, la déception se fit sentir, mais en même temps, je fus réellement soulagée d'avoir tué Rina, car selon toute vraisemblance, c'était la seule méthode qui aurait fonctionné avec mon père, de toute façon.", Line_Normal);
 	ClearMessage();
@@ -1413,16 +1413,19 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100244", 256, TRUE);
 	OutputLine(NULL, "「今日が晴れてるならそれで十分。",
-		   NULL, "— Il fait beau aujourd'hui, c'est largement suffisant, non ?", Line_WaitForInput);
+		   NULL, "— Il fait beau aujourd'hui, c'est largement suffisant, non ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100245", 256, TRUE);
 	OutputLine(NULL, "明日の天気なんか知ったこっちゃないってことさ。",
-		   NULL, " Je sais pas quel temps il fera demain, mais c'est pas grave, parce que je m'en fous, du temps qu'il fera demain.", Line_WaitForInput);
+		   NULL, "Je sais pas quel temps il fera demain, mais c'est pas grave, parce que je m'en fous, du temps qu'il fera demain.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100246", 256, TRUE);
 	OutputLine(NULL, "だから、今日という日を俺は精一杯遊び倒したい。",
-		   NULL, " Je préfère m'amuser aujourd'hui, tant que je le peux.", Line_WaitForInput);
+		   NULL, "Je préfère m'amuser aujourd'hui, tant que je le peux.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100247", 256, TRUE);
 	OutputLine(NULL, "いつ天気が崩れたって後悔しないくらいに徹底的にな。」",
-		   NULL, " Pour ne pas le regretter quand il se mettra à pleuvoir.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Pour ne pas le regretter quand il se mettra à pleuvoir.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 

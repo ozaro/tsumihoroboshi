@@ -101,10 +101,11 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200064", 256, TRUE);
 	OutputLine(NULL, "「だってだって、レナのお持ち帰りを邪魔するんだもん〜☆",
-		   NULL, "— Mais oui, mais ils faisaient rien qu'à m'empêcher d'aller voir les petites choses toutes mimii dans le restaurant☆!", Line_WaitForInput);
+		   NULL, "— Mais oui, mais ils faisaient rien qu'à m'empêcher d'aller voir les petites choses toutes mimii dans le restaurant☆!", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200065", 256, TRUE);
 	OutputLine(NULL, "　きっとみんなかぁいいよぉ、みぃんなお持ち帰りぃ〜！！」",
-		   NULL, " Et ça, c'est pas gentil ! Je suis sûre qu'elles sont toutes les trois super trognons, je les ramène toutes à la maison !", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Et ça, c'est pas gentil ! Je suis sûre qu'elles sont toutes les trois super trognons, je les ramène toutes à la maison !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
@@ -122,13 +123,15 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200066", 256, TRUE);
 	OutputLine(NULL, "「圭一くんだってすごかったよ？",
-		   NULL, "— Mais tu sais, tu as été impressionnant aussi, Keiichi.", Line_WaitForInput);
+		   NULL, "— Mais tu sais, tu as été impressionnant aussi, Keiichi.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200067", 256, TRUE);
 	OutputLine(NULL, "　大勢に囲まれて飲み込まれたと思ったら、急にシンとなって、そのあとみんな、涙を流しながら道を開けてた。",
-		   NULL, " Je les ai vus te fondre dessus et t'entourer, j'ai pensé qu'ils t'avaient eu, mais en fait non, tout est devenu super silencieux, d'un seul coup, et quand j'ai tourné la tête pour voir ce qu'il se passait, ils étaient tous en train de pleurer en t'ouvrant le passage.", Line_WaitForInput);
+		   NULL, "Je les ai vus te fondre dessus et t'entourer, j'ai pensé qu'ils t'avaient eu, mais en fait non, tout est devenu super silencieux, d'un seul coup, et quand j'ai tourné la tête pour voir ce qu'il se passait, ils étaient tous en train de pleurer en t'ouvrant le passage.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170200068", 256, TRUE);
 	OutputLine(NULL, "なんでかな、かな？」",
-		   NULL, " Je peux savoir pourquoi ?", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Je peux savoir pourquoi ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
@@ -141,10 +144,11 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100071", 256, TRUE);
 	OutputLine(NULL, "だから同士諸君、今は涙を流しても次の抽選の勝者になれ、",
-		   NULL, "Que même si c'était dur et injuste, ils devaient simplement retenter leur chance pour la prochaine fois.", Line_WaitForInput);
+		   NULL, "Que même si c'était dur et injuste, ils devaient simplement retenter leur chance pour la prochaine fois.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s09/01/170100072", 256, TRUE);
 	OutputLine(NULL, "とまぁ、その辺りのことを少々語ったら、みんな理解してくれたようで…。」",
-		   NULL, " Enfin, je leur ai dit ça avec un peu plus de verve, mais en gros, voilà, quoi. Ils se sont montrés coopératifs, c'est tout...", Line_Normal);
+		   NULL, "Enfin, je leur ai dit ça avec un peu plus de verve, mais en gros, voilà, quoi. Ils se sont montrés coopératifs, c'est tout...", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -288,19 +292,21 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>男</color>", NULL, "<color=#f5e6d3>Homme</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s09/00/manj17001", 256, TRUE);
 	OutputLine(NULL, "「むほほほほ！",
-		   NULL, "— Allons, allons, petit scarabée !", Line_WaitForInput);
+		   NULL, "— Allons, allons, petit scarabée !", GetGlobalFlag(GLinemodeSp));
 
 	PlaySE( 0, "s_Kyupiin", 56, 64 );
 	SetValidityOfInput( FALSE );
 	Wait( 200 );
 	SetValidityOfInput( TRUE );
 
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>男</color>", NULL, "<color=#f5e6d3>Homme</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s09/00/manj17002", 256, TRUE);
 	OutputLine(NULL, "　女の子のローテのチェックは基本ですよお！！",
-		   NULL, " Il faut toujours étudier les heures de service, c'est le minimum syndical !", Line_WaitForInput);
+		   NULL, "Il faut toujours étudier les heures de service, c'est le minimum syndical !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>男</color>", NULL, "<color=#f5e6d3>Homme</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s09/00/manj17003", 256, TRUE);
 	OutputLine(NULL, "　巨乳好きなら",
-		   NULL, " Ceux qui aiment la pastèque…", Line_Continue);
+		   NULL, "Ceux qui aiment la pastèque…", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 600 );
 	// (backup) SetValidityOfInput( TRUE );
@@ -325,7 +331,7 @@
 
 	SetSpeedOfMessage( TRUE, 128 );
 	OutputLine(NULL, "１７時以降は絶対押さえたいですねえぇえ！",
-		   NULL, " 17h !", Line_Continue);
+		   NULL, " 17h !", GetGlobalFlag(GLinemodeSp));
 
 	PlaySE( 0, "s_daidageki", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
@@ -333,9 +339,10 @@
 
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>男</color>", NULL, "<color=#f5e6d3>Homme</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s09/00/manj17004", 256, TRUE);
 	OutputLine(NULL, "　逆属性の方は金曜１７時以降が勝負！！」",
-		   NULL, " Et ceux qui préfèrent les DFC doivent réserver le vendredi après 17h, si possible !", Line_Continue);
+		   NULL, "Et ceux qui préfèrent les DFC doivent réserver le vendredi après 17h, si possible !", Line_Continue);
 
 	PlaySE( 0, "s_daidageki", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 0, 4*2, FALSE );

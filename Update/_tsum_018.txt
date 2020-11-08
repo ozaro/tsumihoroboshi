@@ -13,9 +13,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　垣根を草刈機で剪定するやつらは、なるほど私が学校の敷地を出ないように監視しているかのようだった。",
-		   NULL, "Lorsque je vis les hommes en uniforme se mettre à tailler les haies de l'école, je fus vraiment impressionnée par leur ingéniosité.", Line_WaitForInput);
+		   NULL, "Lorsque je vis les hommes en uniforme se mettre à tailler les haies de l'école, je fus vraiment impressionnée par leur ingéniosité.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　万が一、私が勘付いて逃げ出さないとも限らないのだから。",
-		   NULL, " C'était un moyen très naturel de pouvoir surveiller l'intérieur de l'école et de m'empêcher de partir, pour le cas où je me douterais de quelque chose.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "C'était un moyen très naturel de pouvoir surveiller l'intérieur de l'école et de m'empêcher de partir, pour le cas où je me douterais de quelque chose.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -587,7 +588,7 @@
 		   NULL, "Quoique... C'est pas un peu stupide de croire qu'ils iraient se limiter simplement à Hinamizawa ? Ils ont les moyens de mener une guerre bactériologique, après tout ?", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　信仰で支配しようと企めば、必ずその信仰をより広域に広げようと欲してしまう人の欲を、すでに歴史が証明している。",
 		   NULL, "Et puis, l'Histoire nous a déjà prouvé que lorsqu'une organisation tente de s'imposer par la foi, elle finit toujours par tenter de s'étendre le plus possible. Il y a toujours des gens avides de conquêtes, possédés par la soif du pouvoir.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -1206,23 +1207,27 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>駐在</color>", NULL, "<color=#f5e6d3>Résident</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s09/00/chu17006", 256, TRUE);
 	OutputLine(NULL, "「通帳と印鑑、大丈夫だったんですかぁ。",
-		   NULL, "— Et donc ils n'ont pas pris le livret, ni votre sceau familial ?", Line_WaitForInput);
+		   NULL, "— Et donc ils n'ont pas pris le livret, ni votre sceau familial ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>駐在</color>", NULL, "<color=#f5e6d3>Résident</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s09/00/chu17007", 256, TRUE);
 	OutputLine(NULL, "そりゃあ不幸中の幸いでしたねぇ。",
-		   NULL, " Vous avez de la chance dans votre malheur, ils pouvaient prendre tout ce qu'il y avait sur votre compte avec ça !", Line_WaitForInput);
+		   NULL, "Vous avez de la chance dans votre malheur, ils pouvaient prendre tout ce qu'il y avait sur votre compte avec ça !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>駐在</color>", NULL, "<color=#f5e6d3>Résident</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s09/00/chu17008", 256, TRUE);
 	OutputLine(NULL, "……最近は、通帳から足が付くと思って、プロは現金しか持ってかないんですよねー。",
-		   NULL, " ... Ah, ce sont sûrement des pros, ils doivent savoir que nous pouvons remonter les traces sur tous les virements. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "... Ah, ce sont sûrement des pros, ils doivent savoir que nous pouvons remonter les traces sur tous les virements. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>駐在</color>", NULL, "<color=#f5e6d3>Résident</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s09/00/chu17009", 256, TRUE);
 	OutputLine(NULL, "…こりゃあだいぶ手馴れた空き巣かなぁ。",
-		   NULL, "Oui, les gens qui ont fait ça savaient très bien ce qu'ils faisaient.", Line_WaitForInput);
+		   NULL, "Oui, les gens qui ont fait ça savaient très bien ce qu'ils faisaient.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>駐在</color>", NULL, "<color=#f5e6d3>Résident</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s09/00/chu17010", 256, TRUE);
 	OutputLine(NULL, "…金庫ごと持ってかないで、この場で開けちゃうってんだから、相当のプロだねぇ。",
-		   NULL, " Et puis regardez, ils ont juste ouvert le coffre, ils auraient pu tout prendre et faire le tri après, mais non ! Oui, ce ne sont pas des débutants.", Line_WaitForInput);
+		   NULL, "Et puis regardez, ils ont juste ouvert le coffre, ils auraient pu tout prendre et faire le tri après, mais non ! Oui, ce ne sont pas des débutants.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>駐在</color>", NULL, "<color=#f5e6d3>Résident</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s09/00/chu17011", 256, TRUE);
 	OutputLine(NULL, "で、お金はどのくらいやられちゃって？」",
-		   NULL, " Il y avait combien ?", Line_Normal);
+		   NULL, "Il y avait combien ?", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>レナの父</color>", NULL, "<color=#f5e6d3>Papa de Rena</color>", NULL, Line_ContinueAfterTyping); }

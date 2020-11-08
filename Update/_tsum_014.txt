@@ -70,9 +70,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　動物を慣れない環境に強引に移せば、相当のストレスを与えることになるし、",
-		   NULL, "Lorsque vous emmenez un animal dans un environnement nouveau, vous le soumettez à un stress conséquent.", Line_WaitForInput);
+		   NULL, "Lorsque vous emmenez un animal dans un environnement nouveau, vous le soumettez à un stress conséquent.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "人間とて、不慣れな土地で気を許せない生活を強いれば、相当のストレスを与えることになる。",
-		   NULL, " Il en va de même pour l'être humain, qui accumulera le stress tant qu'il ne sera pas familiarisé avec son nouvel habitat.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Il en va de même pour l'être humain, qui accumulera le stress tant qu'il ne sera pas familiarisé avec son nouvel habitat.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -125,7 +126,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　この「ホームシック」にかかったスイス人たちは、郷里へどうしても帰りたくなり、",
 		   NULL, "Les Suisses avaient progressivement l'envie de plus en plus forte de rentrer chez eux, ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-4>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "でも仕事の都合で帰ることができない葛藤が生じた時、身体的にも精神的にも衰弱し、時には精神に異常すら来たし、脱走や自殺といった逃避行為に駆り立てたという。",
 		   NULL, "mais cela créait des conflits avec leur rôle et leur travail, pour lesquels ils étaient partis. Ce conflit les menait à une plus grande fragilité physique et mentale, due au stress intense qu'ils enduraient. Et parfois, cette fragilité poussait certains à faire des actes irréfléchis voire irresponsables, en faisait des déserteurs, ou les poussait au suicide.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -168,7 +169,7 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その結果、衰弱が起こり、より異郷での生活を困難としていき、最後には理性を曲げることで、帰郷を果たすのである。",
 		   NULL, "Il en résulte un affaiblissement de la personne, qui lui rend la vie plus difficile dans son nouvel environnement. À force, cela peut amener l'individu à corrompre inconsciemment sa perception du monde pour justifier le retour chez lui.", Line_Normal);
 	ClearMessage();
@@ -212,7 +213,7 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-4>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　節目ごとに里帰りを求める風習の数々は地方差があり、出身地の文化によってもまた「帰巣性」の強弱は変わると思われる。",
 		   NULL, "Chaque région possède ses propres rites et traditions, qui peuvent nécessiter le retour de l'individu dans sa communauté première lors des grandes occasions de sa vie, ou pour certaines fêtes dans l'année. Elle peut donc engrainer en lui un instinct de retour au nid plus ou moins fort à travers ce biais.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -230,10 +231,10 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　これにはすでに述べた選民思想や、穢れ意識などが作用しているものと思われるが、",
 		   NULL, "Comme je l'ai présenté tout à l'heure, je pense que cette règle est liée au mythe du peuple élu d'entre les autres, à une idéologie de race supérieure, ce qui explique leur extrême prudence face à la souillure du monde extérieur. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-4>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "禁を破って村を捨てれば、必ずオヤシロさまが追ってきて祟りを成すという、現在でも強く信じられている迷信は、先に述べた「ホームシック」と捉えることもできる。",
 		   NULL, "Mais de plus, la sanction prévue à l'encontre de ceux qui abandonneraient le village, à savoir le fait que la déesse Yashiro les traque absolument partout où ils pourraient aller pour les maudire et provoquer leur mort -- sanction dont les villageois ont encore peur aujourd'hui -- fait penser à une description rocambolesque du phénomène du mal du pays.", Line_Normal);
 	ClearMessage();
@@ -242,13 +243,14 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　「帰巣性」と「ホームシック」の関係が比例的であるならば、",
-		   NULL, "Si l'on admet la force outrancière de cet instinct, et si l'on considère comme acquis un rapport proportionnel entre celui-ci et le mal du pays,", Line_WaitForInput);
+		   NULL, "Si l'on admet la force outrancière de cet instinct, et si l'on considère comme acquis un rapport proportionnel entre celui-ci et le mal du pays,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "祟りという大袈裟な表現はまさに「ホームシック」の強さを示すものであり、同時に「帰巣性」の強さを示すものでもある。",
-		   NULL, " alors la “malédiction” ne serait en fait qu'une hyperbole pour désigner la puissance de ce mal du pays chez les habitants du village.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "alors la “malédiction” ne serait en fait qu'une hyperbole pour désigner la puissance de ce mal du pays chez les habitants du village.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その「帰巣性」の強さゆえに、下界を強く忌み嫌い、閉鎖社会を形作ったのではないだろうか。",
 		   NULL, "Je pense que c'est la combinaison de cet instinct anormalement fort et des réactions outrancières chez les habitants qui a instauré chez eux cette haine de l'extérieur et qui les a forcés à se retrancher entre eux pour vivre en autarcie.", Line_Normal);
 	ClearMessage();
@@ -309,7 +311,7 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　しかも出稼ぎに出た誰かが、異郷の地で祟りに遭い、狂い死んだとの噂が流れると、流出住民たちは次々と村か、周辺の町へ舞い戻ってくることとなる。",
 		   NULL, "Il est facile de s'imaginer que la rumeur des morts étranges qui attendaient les rares fous qui s'aventureraient hors du village eut suffisamment d'impact pour rappeler la plupart des habitants à Hinamizawa-même, si ce n'est au moins dans les villes les plus proches.", Line_Normal);
 	ClearMessage();
@@ -325,7 +327,7 @@
 
 	PlaySE( 0, "s_page", 56, 64 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　彼らは生まれた時から無意識の内にオヤシロさまの戒律を刷り込まれ、村を出ることに対し、無意識の内に罪を感じていたに違いない。",
 		   NULL, "Depuis leur naissance, les habitants de Hinamizawa vénèrent la déesse et leurs parents et grands-parents leur inculquent les anciennes lois et les coutumes autour d'elle. Ils développent donc inconsciemment un sentiment de culpabilité à l'idée de quitter le village.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -338,7 +340,7 @@
 
 	PlaySE( 0, "s_page", 56, 64 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　オヤシロさまの戒律があるから「帰巣性」が強まったのか、「ホームシック」が強すぎるからオヤシロさまの戒律を作ったのか。",
 		   NULL, "Est-ce l'existence et la mise en place des lois de la déesse qui ont poussé l'instinct de retour au nid à son paroxysme, ou bien ont-elles été mises en place justement pour empêcher que les habitants ne deviennent fous à lier en quittant le village ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -454,13 +456,13 @@
 
 	PlaySE( 0, "s_page", 56, 64 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　明治の頃の、流出住民集団帰郷の際、帰郷者たちの中である奇病の噂が流れた。",
 		   NULL, "À l'ère Meiji, lorsque les habitants partirent pour la première fois du village, pour finalement revenir en masse juste après, les gens qui étaient revenus se mirent à parler en secret d'une maladie tout à fait extraordinaire.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　雛見沢を離れると、傷口が腐り「うじ虫」が湧き出して体中を内側から食い尽くすというのである。",
 		   NULL, "Selon eux, lorsque l'on quitte Hinamizawa, la gangrène attaque les anciennes cicatrices, et des asticots apparaissent ; ils rentrent par les blessures de la peau à l'intérieur du corps et mangent la personne de l'intérieur.", Line_Normal);
 	ClearMessage();
@@ -472,7 +474,7 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　当時の口伝によると、神主は不出である絵巻物を広げ、その「うじ湧き」が太古の昔から語り継がれていたことを示したらしい。",
 		   NULL, "Si l'on en croit la tradition orale, le prêtre sortit de très anciens rouleaux illustrés du temple, qui normalement n'étaient pas censés être consultés par le petit peuple, et il montra que “l'apparition d'asticots” était documentée depuis les temps anciens.", Line_Normal);
 	ClearMessage();
@@ -489,31 +491,31 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その鬼たちの血を宿す彼らは、オヤシロさまの加護がある雛見沢では何の問題もないが、",
 		   NULL, "Ainsi donc, leur descendance humaine, protégée par la bénédiction et la protection de la déesse, semblerait pouvoir vivre à Hinamizawa sans même se rendre compte de l'existence de ces parasites. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "異郷の地で加護を失うと、鬼の血の中で眠っていた「うじ虫」たちも目覚め、全身に溢れかえって、その身を食い尽くしてしまうと言うのだ。",
 		   NULL, "Mais cette protection étant perdue graduellement lorsque les gens déménagent pour une autre région du monde, les parasites dans leur sang se réveilleraient et, trop nombreux, ils dévoreraient leur hôte depuis l'intérieur.", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 0, "s_page", 56, 64 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　しばらくの間、この「うじ湧き病」はひどく恐れられ、仕事の都合で郷里を離れなければならない時には、この「祟り」から赦しを得る免罪符を神社に求めたという。",
 		   NULL, "Pendant quelque temps, cette maladie fut extrêmement crainte, et ceux qui devaient se résoudre à partir pour accomoder leurs conditions de travail furent alors nombreux à demander au prêtre une purification rituelle visant à demander par avance le pardon de la déesse Yashiro.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "（この辺が、中世スイスのホームシック予防と合致するのは面白い）",
 		   NULL, "(Il est intéressant, si ce n'est cocasse, de noter que malgré les évolutions différentes des civilisations d'Europe et du Japon, les populations suisses du Moyen-Âge et celles de Hinamizawa plusieurs siècles plus tard eurent la même réaction)", Line_Normal);
 	ClearMessage();
 	PlaySE( 0, "s_page", 56, 64 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　大戦を境に、この「うじ湧き病」の妄想は潰えたが、郷里から離れて住まう親族に免罪符を送る習慣は根強く残っている。",
 		   NULL, "Depuis la seconde guerre mondiale, cette croyance sur les asticots s'est perdue, mais les gens continuent de payer le prêtre du temple Furude pour demander l'indulgence de la déesse Yashiro envers les proches devant déménager pour raisons professionnelles ou autres.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　また、免罪符の中に「蛆（うじ）」の字が含まれているのもその名残だろう。",
 		   NULL, "On notera ici la présence de l'idéogramme ancien des asticots (蛆 se lisant uji) au dos des talismans porte-bonheur du temple Furude à Hinamizawa -- alors que les talismans des sanctuaires shintoïstes portent normalement l'inscription uji écrite avec l'idéogramme de la descendance (氏).", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -539,15 +541,14 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　祟りを鵜呑みにした集団帰郷者たちにある種の集団妄想が取り憑き、それを神主が巧みに信仰心へ誘導したと読み取るのが、確かに自然ではあるのだが…。",
 		   NULL, "On pourrait certes penser que les habitants soient tous plus ou moins guidés dans leurs pensées par le culte de la déesse, un peu comme dans une secte, et que le prêtre du temple Furude a simplement saisi l'occasion pour transformer cette hallucination collective en foi religieuse, mais...", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 0, "s_page", 56, 64 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　偶然の集団妄想が、たまたま太古の絵巻物と一致しただけとするには、どうにも腑に落ちない。",
 		   NULL, "Soyons réalistes, je ne crois pas à l'heureux hasard d'un rouleau illustré vieux de plusieurs siècles qui décrirait exactement une hallucination collective de la communauté -- qui plus est ayant lieu si loin dans le futur.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -663,9 +664,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　では、逆を返せば、…オヤシロさまの加護があれば溢れ出さないだけで、",
-		   NULL, "Mais alors, si on prend le problème à l'envers, on peut dire que c'est uniquement parce que l'on a la bénédiction de la déesse que les asticots ne grouillent pas.", Line_WaitForInput);
+		   NULL, "Mais alors, si on prend le problème à l'envers, on peut dire que c'est uniquement parce que l'on a la bénédiction de la déesse que les asticots ne grouillent pas.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "村人全員がこのうじ虫を知らずに血管の中に飼っているということにはならないだろうか…？",
-		   NULL, " Ce qui veut dire que depuis leur naissance, tous les habitants vivent avec cette menace dans le sang...", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Ce qui veut dire que depuis leur naissance, tous les habitants vivent avec cette menace dans le sang...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -698,7 +700,7 @@
 
 	PlaySE( 0, "s_page", 56, 64 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　集団帰郷者の「うじ湧き病」で考えたのだが、そもそも雛見沢の過度の「ホームシック」が、何らかの寄生虫による感染症とは考えられないだろうか。",
 		   NULL, "Il m'est arrivé une théorie en tête alors que je compilais les informations sur la “poussée d'asticots” décrite par les revenants au village : Et si le mal du pays des gens de Hinamizawa était dû à une contamination par un parasite ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -706,9 +708,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　これは、彼らが傷口から湧き出す「うじ虫」を見たからということではなく、",
-		   NULL, "Ce n'est pas à cause des asticots qui apparaissent dans les blessures que l'idée m'est venue.", Line_WaitForInput);
+		   NULL, "Ce n'est pas à cause des asticots qui apparaissent dans les blessures que l'idée m'est venue.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "そもそも彼らが文化（信仰）だと思っているものが、そもそも感染症と関連するのではないかと考察するものである。",
-		   NULL, " Non, en fait, j'ai simplement posé l'hypothèse que le culte de la déesse Yashiro -- la culture du village, donc -- proviendrait d'une contamination.", Line_Normal);
+		   NULL, "Non, en fait, j'ai simplement posé l'hypothèse que le culte de la déesse Yashiro -- la culture du village, donc -- proviendrait d'une contamination.", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 0, "s_page", 56, 64 );
@@ -739,9 +742,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　例えば、中間宿主を経由して感染する寄生虫に見られる能力に、",
-		   NULL, "Par exemple, on sait que certains parasites prennent le contrôle de leur hôte pour que celui-ci soit mangé par un prédateur ;", Line_WaitForInput);
+		   NULL, "Par exemple, on sait que certains parasites prennent le contrôle de leur hôte pour que celui-ci soit mangé par un prédateur ;", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "宿主の行動を支配して、より上位の宿主にわざと捕食させ、伝染しようとする試みが知られている。",
-		   NULL, " ainsi, le parasite se retrouve dans un corps plus haut placé dans la chaîne alimentaire, et donc plus en sécurité.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "ainsi, le parasite se retrouve dans un corps plus haut placé dans la chaîne alimentaire, et donc plus en sécurité.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -757,7 +761,7 @@
 		   NULL, "À un niveau différent maintenant, on connaît aussi le Toxoplasma gondii, qui prend le contrôle de la souris qu'il parasite pour qu'elle se fasse manger par un chat, afin de parasiter le chat.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　この場合、中間宿主である鼠から、猫に対する忌避性を喪失させることによって、捕食・伝染させる確率を向上させていることが知られている。",
 		   NULL, "Dans ce cas précis, le parasite bloque les influx nerveux liés à la peur du chat pour que la souris soit moins prudente ou carrément ignorante du danger qu'il représente pour elle. Ainsi, le parasite augmente ses chances d'atterrir sur un hôte plus fort.", Line_Normal);
 	ClearMessage();
@@ -781,7 +785,7 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　同時に、感染者の攻撃性を著しく向上させ、無差別に噛み付き、傷口に唾液と混じって侵入することで伝染する。",
 		   NULL, "En augmentant exponentiellement l'agressivité de son hôte, il s'assure que celui-ci mordra presque tout être vivant lui passant à portée. Installé dans la bave de l'animal, il pourra donc sans problème se propager à un nouvel hôte en passant par la blessure.", Line_WaitForInput);
 	OutputLine(NULL, "……ちなみにこれは狂犬病のこと。",
@@ -871,7 +875,7 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　鬼たちが村人を襲ったという記述は、おそらく末期の感染者の錯乱した行為を示すに違いない。",
 		   NULL, "Lorsque le texte sacré dit que les démons ont attaqué le village, on imagine sans peine des malades en phase terminale qui seraient poussés à attaquer le premier venu pour assurer la transmission du parasite à un autre hôte.", Line_Normal);
 	ClearMessage();

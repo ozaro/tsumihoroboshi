@@ -207,12 +207,13 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…ひょっとすると帰りがけに刺されるかもしれないと怯えはするよな。",
-		   NULL, "Vous allez vous faire dans le froc en vous disant qu'il lui viendra peut-être à l'idée de vous tuer avant de partir, pour ne pas prendre de risques.", Line_WaitForInput);
+		   NULL, "Vous allez vous faire dans le froc en vous disant qu'il lui viendra peut-être à l'idée de vous tuer avant de partir, pour ne pas prendre de risques.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "……でも、泥棒も人間、むやみに人の命は奪わないはずだ、って…祈るじゃないか。",
-		   NULL, " Mais ce voleur, c'est un être humain, il ne va quand même pas ôter la vie à quelqu'un simplement comme ça, pour le plaisir. En tout cas, c'est ce que vous espérez.", Line_Normal);
+		   NULL, "Mais ce voleur, c'est un être humain, il ne va quand même pas ôter la vie à quelqu'un simplement comme ça, pour le plaisir. En tout cas, c'est ce que vous espérez.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　つまり、どんな悪人が相手でも、俺たちは価値観や社会常識、道徳が共有できている限り、相手の善意を信じる。",
 		   NULL, "Donc même si vous êtes en face d'un type vraiment méchant, vous pouvez partir du principe que tant que vous partagez quelque chose en commun avec lui, des valeurs, des principes, peu importe, vous faites confiance à son bon fond.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -452,22 +453,27 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201424", 256, TRUE);
 	OutputLine(NULL, "「じゃあみんな、床にうつ伏せになってね。",
-		   NULL, "— Bon, et maintenant, tous au sol, face contre terre.", Line_WaitForInput);
+		   NULL, "— Bon, et maintenant, tous au sol, face contre terre.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201425", 256, TRUE);
 	OutputLine(NULL, "圭一くんは後ろ手にどんどん縛っていって。",
-		   NULL, " Keiichi, tu passes et tu leur attaches les mains dans le dos, comme je t'ai dit.", Line_WaitForInput);
+		   NULL, "Keiichi, tu passes et tu leur attaches les mains dans le dos, comme je t'ai dit.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201426", 256, TRUE);
 	OutputLine(NULL, "……きっちり縛るんだよ。",
-		   NULL, " Et fais ça bien, d'accord ?", Line_WaitForInput);
+		   NULL, "Et fais ça bien, d'accord ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201427", 256, TRUE);
 	OutputLine(NULL, "圭一くんは私の味方だもん。",
-		   NULL, " Je sais que tu es de mon côté.", Line_WaitForInput);
+		   NULL, "Je sais que tu es de mon côté.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201428", 256, TRUE);
 	OutputLine(NULL, "だからわざと緩くなんか縛ったりしない。",
-		   NULL, " Tu ne vas quand même pas faire exprès de mal les attacher ?", Line_WaitForInput);
+		   NULL, "Tu ne vas quand même pas faire exprès de mal les attacher ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201429", 256, TRUE);
 	OutputLine(NULL, "ね？」",
-		   NULL, " C'est pas ton genre ?", Line_Normal);
+		   NULL, "C'est pas ton genre ?", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "black", 400 );
@@ -630,7 +636,7 @@
 		   NULL, "Bientôt, il ne resta plus que moi debout, comme un idiot, avec toutes les cordes à sauter en mains.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…俺はクラスの全員が床にうつ伏せになって、……教壇の後ではレナが人質に鉈を突きつけながら俺たち全体を凝視するその異常な光景に、……ただただ呆然とする他なかった…。",
 		   NULL, "Je regardai la classe pour embrasser du regard la situation : tous les élèves sauf moi étaient face contre terre, tandis que Rena nous observait, la machette prête à frapper son otage, installée derrière l'estrade. Je restai un moment sans savoir quoi faire, hébété.", Line_Normal);
 	ClearMessage();
@@ -949,16 +955,19 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201437", 256, TRUE);
 	OutputLine(NULL, "「ありがとう、圭一くん。",
-		   NULL, "— Bien, merci, Keiichi.", Line_WaitForInput);
+		   NULL, "— Bien, merci, Keiichi.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201438", 256, TRUE);
 	OutputLine(NULL, "……圭一くんを疑りはしないけど、一応、全員を調べるね？",
-		   NULL, " Ce n'est pas que je ne te croie pas, mais je vais les vérifier, d'accord ?", Line_WaitForInput);
+		   NULL, "Ce n'est pas que je ne te croie pas, mais je vais les vérifier, d'accord ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201439", 256, TRUE);
 	OutputLine(NULL, "　圭一くんは頭の上で手を組んで、うつ伏せに寝ててね。",
-		   NULL, " Mets toi les mains derrière la tête et allonge-toi par terre, face au sol.", Line_WaitForInput);
+		   NULL, "Mets toi les mains derrière la tête et allonge-toi par terre, face au sol.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s09/02/170201440", 256, TRUE);
 	OutputLine(NULL, "……これは全員に言うけど、",
-		   NULL, " Ah, et au fait, c'est valable pour tout le monde alors écoutez bien :", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Ah, et au fait, c'est valable pour tout le monde alors écoutez bien :", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();

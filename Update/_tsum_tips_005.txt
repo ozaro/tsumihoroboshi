@@ -212,8 +212,7 @@
 
 	PlayBGM( 1, "type", 56, 0 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　こちらの物件は現在、急発展を遂げている穀倉駅近くの高級分譲マンションでございまして、今後、穀倉駅周辺の地価上昇に伴い、さらに価値が上がることが予想される優良物件でございます。",
 		   NULL, "L'objet qui vous intéresse fait partie d'un complexe d'appartements de luxe en construction près de la gare de Gogura. L'aménagement du territoire prévoit de nombreuses nouvelles infrastructures, ce qui fera bientôt grimper les prix dans le domaine du bâtiment dans cette région.", Line_ContinueAfterTyping);
 

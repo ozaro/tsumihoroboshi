@@ -49,7 +49,7 @@
 
 	PlaySE( 0, "s_page", 56, 64 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　患者にとって最大のショックは、両親の離婚によって、絶対に安全だと心を許していた家庭という居場所に裏切られたことによります。",
 		   NULL, "Le plus grand choc psychologique subi par la patiente vient de la perte de la cellule familiale, qui était pour elle un endroit qu'elle pensait sûr, gage de stabilité et de confiance. Le divorce a détruit tous les repères dans son esprit.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -89,7 +89,7 @@
 
 	PlaySE( 0, "s_page", 56, 64 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　今回の患者のケースでは、おそらくは急性のものと思われますので、父親の協力があればおそらく、然るべき薬物との併用で、３ヶ月以内に治癒するものと思います。",
 		   NULL, "Dans le cas présent, il s'agit d'une crise aiguë, ce qui offre la possibilité d'un retour plutôt rapide à la normale. Si le père joue le jeu, la crise pourrait s'estomper dans les trois mois et disparaître même, sous réserve de l'administration d'un traitement médicamenteux approprié.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -151,7 +151,7 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　患者の話によるならば、郷里に戻る以外に祟りから逃れる術はなく、現在の環境に居続ける限り、その祟りは続くとしています。",
 		   NULL, "D'après les dires de la patiente, elle ne pourra échapper à cette malédiction que si elle rentre au village ; de plus, tant qu'elle ne rentrera pas au village, cette malédiction continuera d'affecter son quotidien.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -184,14 +184,15 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　もしも父親に経済的な余裕があるならば郷里への引越し。",
-		   NULL, "Si le père de la patiente en a les moyens financiers, veuillez lui recommander instamment de réemménager dans ce village.", Line_WaitForInput);
+		   NULL, "Si le père de la patiente en a les moyens financiers, veuillez lui recommander instamment de réemménager dans ce village.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "もしくは郷里の親類の下へ患者の生活環境を移すことも重要なポイントになると思われます。",
-		   NULL, " Sinon, qu'il tente de faire vivre son enfant chez des proches qui habiteraient dans ce village.", Line_Normal);
+		   NULL, "Sinon, qu'il tente de faire vivre son enfant chez des proches qui habiteraient dans ce village.", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 0, "s_page", 56, 64 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　また、これほど顕著な症状を引き起こす「信仰」ならば、本件以外にも事例が多数存在する可能性があります。",
 		   NULL, "Je désire en outre porter à votre attention le fait que si les croyances de ce village sont capables d'occasionner de pareils troubles chez les habitants, alors cette patiente ne serait pas la seule concernée par ces symptômes.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
